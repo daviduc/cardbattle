@@ -5,6 +5,8 @@ using System.IO;
 using System.Linq;
 using CardBattle.Utils.JsonModels;
 using CardBattle.DataModels;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace CardBattle.Utils
 {
@@ -16,16 +18,22 @@ namespace CardBattle.Utils
         {
             _context = context;
         }
-        public void SeedDatabase(string jsonFilePath)
+        public async Task SeedDatabase(string jsonFilePath)
         {
             // Read and deserialize the JSON data
             var jsonData = File.ReadAllText(jsonFilePath);
             var cards = JsonConvert.DeserializeObject<List<CardJsonModel>>(jsonData);
-
-            foreach (var cardJson in cards)
+            // Open a transaction to ensure data consistency
+            using (var transaction = await _context.Database.BeginTransactionAsync())
+            {
+                try
+                {
+                    // Enable IDENTITY_INSERT for Cards table
+                    await _context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT [dbo].[Cards] ON");
+                    foreach (var cardJson in cards)
             {
                 // Skip cards of type "Tower"
-                List<string> skipList = new List<string>(){"Tower","Spell"};
+                List<string> skipList = new List<string>(){"Tower","Spell","Hero"};
                 if (skipList.Contains(cardJson.Type))
                 {
                     continue; // Skip to the next card
@@ -166,9 +174,22 @@ namespace CardBattle.Utils
 
                 _context.Cards.Add(card);
             }
+                    // Save all changes to the database
+                    await _context.SaveChangesAsync();
 
-            // Save all changes to the database
-            _context.SaveChanges();
+                    // Disable IDENTITY_INSERT after inserting records
+                    await _context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT [dbo].[Cards] OFF");
+
+                    // Commit the transaction
+                    await transaction.CommitAsync();    
+                }
+                catch(Exception ex)
+                {
+                    // Roll back the transaction if something goes wrong
+                    await transaction.RollbackAsync();
+                    Console.WriteLine($"Error: {ex.Message}");
+                }
+            }
         }
 
     }

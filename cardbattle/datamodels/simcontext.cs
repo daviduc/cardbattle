@@ -2,7 +2,7 @@ using CardBattle.DataModels.Configurations;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using CardBattle.Utils;
-
+using System.Threading.Tasks;
 namespace CardBattle.DataModels
 {
     public class BattleSimulatorContext : DbContext
@@ -27,13 +27,13 @@ namespace CardBattle.DataModels
             modelBuilder.Entity<CardStatsAbility>()
                 .HasKey(csa => new { csa.CardStatsId, csa.AbilityId });
         }
-        public void InitializeDatabase(string jsonFilePath)
+        public async Task InitializeDatabase(string jsonFilePath)
         {
             // Check if the Cards table is empty
             if (!this.Cards.Any())
             {
                 var seeder = new DatabaseSeeder(this);
-                seeder.SeedDatabase(jsonFilePath);
+                await seeder.SeedDatabase(jsonFilePath);
             }
         }
     }

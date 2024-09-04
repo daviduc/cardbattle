@@ -2,12 +2,12 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CardBattle.DataModels;
-
+using System.Threading.Tasks;
 namespace CardBattle
 {
     class Program  // Define the Program class
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
 
@@ -20,7 +20,7 @@ namespace CardBattle
                 string jsonFilePath = "c:\\Users\\david\\splsim\\cardbattle\\cards.json";
 
                 // Initialize the database
-                context.InitializeDatabase(jsonFilePath);
+                await context.InitializeDatabase(jsonFilePath);
             }
 
             host.Run();
