@@ -1,12 +1,34 @@
 ﻿using System;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using CardBattle.DataModels;
 
-namespace cardbattle
+namespace CardBattle
 {
-    class Program
+    class Program  // Define the Program class
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var host = CreateHostBuilder(args).Build();
+
+            using (var scope = host.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var context = services.GetRequiredService<BattleSimulatorContext>();
+
+                // Path to your JSON file
+                string jsonFilePath = "c:\\Users\\david\\splsim\\cardbattle\\cards.json";
+
+                // Initialize the database
+                context.InitializeDatabase(jsonFilePath);
+            }
+
+            host.Run();
         }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureServices((_, services) =>
+                    services.AddDbContext<BattleSimulatorContext>());
     }
 }
