@@ -21,6 +21,7 @@ namespace CardBattle.DataModels
 
         // Stat buffs applied by the Summoner to other cards
         public ICollection<StatBuff> StatBuffs { get; set; }  // Buffs that the summoner grants (e.g., +2 Attack, +1 Speed)
+        public ICollection<SummonerStatAbility> SummonerStatAbilities { get; set; }
     }
     public class PtrOptions
     {
@@ -33,9 +34,7 @@ namespace CardBattle.DataModels
 
         // Special stat buffs
         public ICollection<StatBuff> StatBuffs { get; set; }
-
-        // Special abilities granted under ptrOptions
-        public ICollection<Ability> PtrAbilities { get; set; }
+        public ICollection<PtrOptionAbility> PtrOptionAbilities { get; set; }
     }
     public class StatBuff
     {

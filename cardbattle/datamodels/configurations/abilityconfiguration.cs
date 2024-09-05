@@ -12,7 +12,8 @@ namespace CardBattle.DataModels.Configurations
                    .WithOne(csa => csa.Ability)
                    .HasForeignKey(csa => csa.AbilityId);
 
-            // Additional configurations...
+            builder.HasIndex(a => a.Name)
+                .IsUnique();
         }
     }
 }

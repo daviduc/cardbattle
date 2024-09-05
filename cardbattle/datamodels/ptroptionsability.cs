@@ -2,12 +2,13 @@ using System.Collections.Generic;
 
 namespace CardBattle.DataModels
 {
-    public class CardStatsAbility
+    public class PtrOptionAbility
     {
-        public int CardStatsId { get; set; }
-        public CardStats CardStats { get; set; }
+        public int PtrOptionId { get; set; }
+        public PtrOptions PtrOptions { get; set; }
 
         public int AbilityId { get; set; }
         public Ability Ability { get; set; }
     }
+
 }

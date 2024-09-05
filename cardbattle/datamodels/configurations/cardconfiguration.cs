@@ -1,5 +1,7 @@
+using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Linq;
 
 namespace CardBattle.DataModels.Configurations
 {
@@ -12,7 +14,12 @@ namespace CardBattle.DataModels.Configurations
                    .WithOne(cs => cs.Card)
                    .HasForeignKey(cs => cs.CardId);
 
-            // Additional configurations...
+            // Convert List<string> to a delimited string for database storage and vice versa
+            builder.Property(c => c.Color)
+                .HasConversion(
+                    v => v != null ? string.Join(":", v) : null,  // From List<string> to delimited string
+                    v => v != null ? v.Split(new[] { ':' }, StringSplitOptions.None).ToList() : null
+                );
         }
     }
 }

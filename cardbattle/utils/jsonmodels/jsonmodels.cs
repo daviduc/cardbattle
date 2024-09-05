@@ -85,6 +85,8 @@ namespace CardBattle.Utils.JsonModels
         public int Id { get; set; }
         public string Name { get; set; }
         public string Color { get; set; }
+        [JsonProperty("secondary_color")]  // Use the "secondary_color" field in the JSON
+        public string SecondaryColor { get; set; } // New secondary_color field
         public string Type { get; set; }
         public int Rarity { get; set; }
         // Use different models for different types
