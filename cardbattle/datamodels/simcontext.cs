@@ -14,6 +14,7 @@ namespace CardBattle.DataModels
         public DbSet<SummonerStat> SummonerStats {get;set;}
         public DbSet<PtrOptions> PtrOptions {get;set;}
         public DbSet<SummonerStatAbility> SummonerStatAbilities {get;set;}
+        public DbSet<Ruleset> Rulesets { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -28,18 +29,25 @@ namespace CardBattle.DataModels
             modelBuilder.ApplyConfiguration(new SummonerStatAbilityConfiguration());
             modelBuilder.ApplyConfiguration(new PtrOptionAbilityConfiguration());
             modelBuilder.ApplyConfiguration(new SummonerStatAbilityConfiguration());
-
+            modelBuilder.ApplyConfiguration(new RulesetConfiguration());
             // Define composite key for the join table
             modelBuilder.Entity<CardStatsAbility>()
                 .HasKey(csa => new { csa.CardStatsId, csa.AbilityId });
         }
-        public async Task InitializeDatabase(string jsonFilePath)
+        public async Task InitializeDatabase(string cardsJsonFilePath, string battlesettingsJsonFilePath)
         {
-            // Check if the Cards table is empty
+            var seeder = new DatabaseSeeder(this);
+
+            // Seed Cards if the table is empty
             if (!this.Cards.Any())
             {
-                var seeder = new DatabaseSeeder(this);
-                await seeder.SeedDatabase(jsonFilePath);
+                await seeder.SeedDatabase(cardsJsonFilePath, "cards");
+            }
+
+            // Seed Rulesets if the table is empty
+            if (!this.Rulesets.Any())
+            {
+                await seeder.SeedDatabase(battlesettingsJsonFilePath, "battlesettings");
             }
         }
     }

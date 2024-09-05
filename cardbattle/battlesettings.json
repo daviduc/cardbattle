@@ -1,0 +1,5079 @@
+{
+  "asset_url": "https://d36mxiodymuqjm.cloudfront.net/",
+  "gold_percent": 0.02,
+  "starter_pack_price": 10,
+  "booster_pack_price": 2,
+  "market_fee": 400,
+  "list_fee_per_listing": 1,
+  "list_expire_in_days": 30,
+  "num_editions": 11,
+  "modern_num_editions": 9,
+  "core_editions": [
+    0,
+    1,
+    4,
+    7,
+    12
+  ],
+  "starter_editions": [
+    7,
+    12
+  ],
+  "soulbound_editions": [
+    6,
+    10,
+    13
+  ],
+  "event_creation_whitelist": [
+    "sps.tournaments",
+    "splinterlands",
+    "stealthtrader",
+    "clove71",
+    "yggspl-official",
+    "investygator",
+    "sl-cs",
+    "bunsbagsandcaps",
+    "crypto-zard",
+    "aftersound",
+    "bulldog1205",
+    "brybro27"
+  ],
+  "ghost_creation_whitelist": [
+    "sps.tournaments",
+    "sl-cs",
+    "splinterlands",
+    "stealthtrader",
+    "clove71",
+    "yggspl-official",
+    "investygator",
+    "bunsbagsandcaps",
+    "crypto-zard",
+    "aftersound",
+    "bulldog1205",
+    "brybro27"
+  ],
+  "bat_event_list": [
+    {
+      "id": "411602d638adab1bab306ea35ac68c96413cade1",
+      "bat": 1
+    },
+    {
+      "id": "aa9309bbb9bc83d4b68968e7428e6e78af6a40ee",
+      "bat": 50
+    },
+    {
+      "id": "41046390299877075e35c812b5af36f7be33b2d5",
+      "bat": 250
+    }
+  ],
+  "event_entry_fee_required": 1,
+  "max_event_entrants": 1000,
+  "tournaments_creation_fee_dec": 2000,
+  "account": "steemmonsters",
+  "tournament_escrow_account": "sl-tournaments",
+  "stats": true,
+  "rarity_pcts": [
+    0.248,
+    0.048,
+    0.008,
+    0
+  ],
+  "xp_levels": [
+    [
+      20,
+      60,
+      160,
+      360,
+      760,
+      1560,
+      2560,
+      4560,
+      7560
+    ],
+    [
+      100,
+      300,
+      700,
+      1500,
+      2500,
+      4500,
+      8500
+    ],
+    [
+      250,
+      750,
+      1750,
+      3750,
+      7750
+    ],
+    [
+      1000,
+      3000,
+      7000
+    ]
+  ],
+  "alpha_xp": [
+    20,
+    100,
+    250,
+    1000
+  ],
+  "gold_xp": [
+    250,
+    500,
+    1000,
+    2500
+  ],
+  "beta_xp": [
+    15,
+    75,
+    175,
+    750
+  ],
+  "beta_gold_xp": [
+    200,
+    400,
+    800,
+    2000
+  ],
+  "combine_rates": [
+    [
+      1,
+      5,
+      14,
+      30,
+      60,
+      100,
+      150,
+      220,
+      300,
+      400
+    ],
+    [
+      1,
+      5,
+      14,
+      25,
+      40,
+      60,
+      85,
+      115
+    ],
+    [
+      1,
+      4,
+      10,
+      20,
+      32,
+      46
+    ],
+    [
+      1,
+      3,
+      6,
+      11
+    ]
+  ],
+  "combine_rates_gold": [
+    [
+      0,
+      0,
+      1,
+      2,
+      5,
+      9,
+      14,
+      20,
+      27,
+      38
+    ],
+    [
+      0,
+      1,
+      2,
+      4,
+      7,
+      11,
+      16,
+      22
+    ],
+    [
+      0,
+      1,
+      2,
+      4,
+      7,
+      10
+    ],
+    [
+      0,
+      1,
+      2,
+      4
+    ]
+  ],
+  "sk_combine_rates": [
+    [
+      1,
+      5,
+      13,
+      25,
+      41,
+      63,
+      89,
+      121,
+      159,
+      200
+    ],
+    [
+      0,
+      0,
+      1,
+      5,
+      11,
+      21,
+      33,
+      47,
+      63,
+      80
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      4,
+      8,
+      13,
+      20,
+      28
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      3,
+      6,
+      10
+    ]
+  ],
+  "sk_combine_rates_gold": [
+    [
+      0,
+      0,
+      1,
+      2,
+      5,
+      9,
+      14,
+      20,
+      27,
+      38
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      2,
+      4,
+      7,
+      11,
+      16,
+      22
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      4,
+      7,
+      10
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      4
+    ]
+  ],
+  "battles": {
+    "asset_url": "https://d36mxiodymuqjm.cloudfront.net/website/battle/",
+    "default_expiration_seconds": 180,
+    "reveal_blocks": 20,
+    "win_streak_wins": 3,
+    "rulesets": [
+      {
+        "active": true,
+        "name": "Standard",
+        "description": "No modification to the standard gameplay rules and mechanics.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "AbilityRemoval",
+        "name": "Back to Basics",
+        "description": "Monsters lose all abilities.",
+        "weight": 1,
+        "invalidTypes": [
+          "AbilityRemoval"
+        ],
+        "invalid": [
+          "Ferocity",
+          "Heavy Hitters",
+          "Stampede"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Silenced Summoners",
+        "description": "Summoners do not give any stat buffs or debuffs or grant/use any abilities.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Aim True",
+        "description": "Attacks always hit their target.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Super Sneak",
+        "description": "All Melee attack Monsters have the Sneak ability.",
+        "weight": 1,
+        "invalid": [
+          "Melee Mayhem",
+          "Maneuvers"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Weak Magic",
+        "description": "Magic attacks hit Armor before reducing Health.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Unprotected",
+        "description": "Monsters do not have any armor and do not get armor from Abilities or Summoner Buffs.",
+        "weight": 1,
+        "invalid": [
+          "Armored Up",
+          "Weak Magic"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Target Practice",
+        "description": "All Ranged and Magic attack Monsters have the Snipe ability.",
+        "weight": 1,
+        "invalid": [
+          "Aimless"
+        ]
+      },
+      {
+        "active": true,
+        "type": "AbilityRemoval",
+        "name": "Fog of War",
+        "description": "Monsters lose the Sneak, Snipe and Opportunity abilities.",
+        "weight": 1,
+        "invalid": [
+          "Equal Opportunity",
+          "Super Sneak",
+          "Target Practice"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Armored Up",
+        "description": "All Monsters have 2 Armor in addition to their normal Armor stat.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "AbilityRemoval",
+        "name": "Healed Out",
+        "description": "All healing abilities are removed from Monsters and Summoners.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Earthquake",
+        "description": "Non-flying Monsters take 2 Melee damage at the end of each round.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Reverse Speed",
+        "description": "Monsters with the lowest Speed attack first and have the highest chance of evading attacks.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Close Range",
+        "description": "Ranged attacks may be used in the first position in battles.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Heavy Hitters",
+        "description": "All Monsters have the Knock Out ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Equalizer",
+        "description": "The initial Health of all Monsters is equal to that of the Monster on either team with the highest base Health.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Attack",
+        "name": "Keep Your Distance",
+        "description": "Monsters with Melee attack may not be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Attack"
+        ],
+        "invalid": [
+          "Briar Patch",
+          "Melee Mayhem",
+          "Stampede",
+          "Super Sneak"
+        ],
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Rarity",
+        "name": "Lost Legendaries",
+        "description": "Legendary Monsters may not be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Rarity"
+        ],
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Melee Mayhem",
+        "description": "Melee attack Monsters can attack from any position.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Taking Sides",
+        "description": "Neutral Monsters may not be used in battles.",
+        "weight": 1,
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Rarity",
+        "name": "Rise of the Commons",
+        "description": "Only Common and Rare Monsters may be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Rarity"
+        ],
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Attack",
+        "name": "Up Close & Personal",
+        "description": "Only Monsters with Melee attack may be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Attack"
+        ],
+        "invalid": [
+          "Aimless",
+          "Close Range",
+          "Counterspell",
+          "Fire & Regret",
+          "Target Practice",
+          "Weak Magic"
+        ],
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Attack",
+        "name": "Broken Arrows",
+        "description": "Ranged attack Monsters may not be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Attack"
+        ],
+        "invalid": [
+          "Close Range",
+          "Fire & Regret"
+        ],
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Mana",
+        "name": "Little League",
+        "description": "Only Monsters & Summoners that cost 4 Mana or less may be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Mana"
+        ],
+        "invalid": [
+          "Ferocity",
+          "Stampede"
+        ],
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ],
+            [
+              12
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ],
+            [
+              12
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Attack",
+        "name": "Lost Magic",
+        "description": "Monsters with Magic attack may not be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Attack"
+        ],
+        "invalid": [
+          "Counterspell",
+          "Weak Magic"
+        ],
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Mana",
+        "name": "Even Stevens",
+        "description": "Only Monsters with even Mana costs may be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Mana"
+        ],
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Mana",
+        "name": "Odd Ones Out",
+        "description": "Only Monsters with odd Mana costs may be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Mana"
+        ],
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Noxious Fumes",
+        "description": "All Monsters start the battle Poisoned.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Stampede",
+        "description": "The Trample ability can trigger multiple times per attack if the trampled Monster is killed.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Equal Opportunity",
+        "description": "All Monsters have the Opportunity ability.",
+        "weight": 1,
+        "invalid": [
+          "Aimless",
+          "Melee Mayhem",
+          "Super Sneak",
+          "Target Practice"
+        ]
+      },
+      {
+        "active": false,
+        "type": "Ability",
+        "name": "Thorns",
+        "description": "All Monsters have the Thorns ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Explosive Weaponry",
+        "description": "All Monsters have the Blast ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Briar Patch",
+        "description": "All Monsters have the Thorns ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Counterspell",
+        "description": "All Monsters have the Magic Reflect ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Holy Protection",
+        "description": "All Monsters have the Divine Shield ability.",
+        "weight": 1
+      },
+      {
+        "active": false,
+        "type": "Ability",
+        "name": "Magic Reflect",
+        "description": "All Monsters have the Magic Reflect ability.",
+        "weight": 1
+      },
+      {
+        "active": false,
+        "type": "Ability",
+        "name": "Spreading Fury",
+        "description": "All Monsters have the Enrage ability.",
+        "weight": 1
+      },
+      {
+        "active": false,
+        "type": "Ability",
+        "name": "Return Fire",
+        "description": "All Monsters have the Return Fire ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Fire & Regret",
+        "description": "All Monsters have the Return Fire ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "What Doesn’t Kill You",
+        "description": "All Monsters have the Enrage ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Tis but Scratches",
+        "description": "All Monsters have the Cripple ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Up to Eleven",
+        "description": "All Monsters have the Amplify ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Aimless",
+        "description": "All Monsters have the Scattershot ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Ferocity",
+        "description": "All Monsters have the Fury ability.",
+        "weight": 1,
+        "invalidTournaments": {
+          "editionCombinations": [
+            [
+              0
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "active": true,
+        "type": "Attack",
+        "name": "Going the Distance",
+        "description": "Only Units with Ranged attack may be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Attack"
+        ],
+        "invalidTournaments": {
+          "singleEdition": true,
+          "editionCombinations": [
+            [
+              0,
+              1
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ],
+            [
+              7
+            ]
+          ]
+        },
+        "invalid": [
+          "Briar Patch",
+          "Counterspell",
+          "Melee Mayhem",
+          "Stampede",
+          "Super Sneak",
+          "Weak Magic"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Attack",
+        "name": "Wands Out",
+        "description": "Only Monsters with Magic attack may be used in battles.",
+        "weight": 1,
+        "invalidTypes": [
+          "Attack"
+        ],
+        "invalidTournaments": {
+          "singleEdition": true,
+          "editionCombinations": [
+            [
+              0,
+              1
+            ]
+          ],
+          "setCombinations": [
+            [
+              0
+            ],
+            [
+              7
+            ]
+          ]
+        },
+        "invalid": [
+          "Briar Patch",
+          "Close Range",
+          "Fire & Regret",
+          "Melee Mayhem",
+          "Stampede",
+          "Super Sneak"
+        ]
+      },
+      {
+        "active": false,
+        "type": "Other",
+        "name": "Knockin’ on Heaven’s Door",
+        "description": "All Monsters start the battle with 1 health.",
+        "weight": 1,
+        "invalid": [
+          "Equalizer"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Are You Not Entertained?",
+        "description": "One additional Gladiator card may be used in battles.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Born Again",
+        "description": "All Monsters have the Rebirth ability.",
+        "weight": 1
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Maneuvers",
+        "description": "All units gain reach.",
+        "weight": 1,
+        "invalid": [
+          "Wands Out",
+          "Going the Distance",
+          "Keep Your Distance",
+          "Melee Mayhem",
+          "Super Sneak"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Ability",
+        "name": "Blood and Sunder",
+        "description": "All units gain Corrosive Ward.",
+        "weight": 1,
+        "invalid": [
+          "Unprotected"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Corrosive Fog",
+        "description": "All Units take 1 corrosive damage each round.",
+        "weight": 1,
+        "invalid": [
+          "Unprotected"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "Shades of Gray",
+        "description": "Only Neutral units may be used.",
+        "weight": 1,
+        "invalid": [
+          "Wands Out",
+          "Going the Distance",
+          "Keep Your Distance",
+          "Taking Sides",
+          "Even Stevens",
+          "Little League",
+          "Lost Legendaries",
+          "Lost Magic",
+          "Odd Ones Out",
+          "Rise of the Commons",
+          "Silenced Summoners",
+          "Up Close & Personal",
+          "Broken Arrows"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "FabFour",
+        "description": "Up to Four Units can be used.",
+        "weight": 1,
+        "invalid": [
+          "FiveAlive"
+        ]
+      },
+      {
+        "active": true,
+        "type": "Other",
+        "name": "FiveAlive",
+        "description": "Up to Five Units can be used.",
+        "weight": 1,
+        "invalid": [
+          "FabFour"
+        ]
+      }
+    ],
+    "min_level_requirement": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        2,
+        1
+      ],
+      [
+        5,
+        4,
+        3,
+        2
+      ],
+      [
+        8,
+        6,
+        5,
+        3
+      ],
+      [
+        10,
+        8,
+        6,
+        4
+      ]
+    ],
+    "min_battles_for_reset": 1,
+    "modern_glint_bonus": 1.8,
+    "wild_glint_bonus": 1.8,
+    "base_glint_earned": 5,
+    "league_glint_bonus": [
+      6.5,
+      6.5,
+      6,
+      5.75,
+      5.25,
+      3.5,
+      2.25,
+      1.5,
+      1.1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "wild_pass_required": 1
+  },
+  "energy": {
+    "max_energy": 50,
+    "hourly_regen_rate": 1,
+    "conversion_rates_by_league": {
+      "GLINT": [
+        null,
+        5,
+        10,
+        50,
+        100,
+        200,
+        400,
+        600,
+        900,
+        1200,
+        1700,
+        2200,
+        2800,
+        3600,
+        5000,
+        6500
+      ],
+      "DEC": [
+        null,
+        2,
+        5,
+        10,
+        20,
+        40,
+        70,
+        100,
+        130,
+        175,
+        250,
+        325,
+        400,
+        500,
+        500,
+        500
+      ],
+      "DEC-B": [
+        null,
+        2,
+        5,
+        10,
+        20,
+        40,
+        70,
+        100,
+        130,
+        175,
+        250,
+        325,
+        400,
+        500,
+        500,
+        500
+      ],
+      "CREDITS": [
+        null,
+        2,
+        5,
+        10,
+        20,
+        40,
+        70,
+        100,
+        130,
+        175,
+        250,
+        325,
+        400,
+        500,
+        500,
+        500
+      ]
+    },
+    "energy_purchased_per_price_increase": 25,
+    "price_increase_multiplier": 0.5
+  },
+  "multi_lb_start_season": 47,
+  "leaderboard_prizes": {
+    "wild": {
+      "Novice": [],
+      "Bronze": [],
+      "Silver": [],
+      "Gold": [],
+      "Diamond": [],
+      "Champion": [
+        100,
+        75,
+        50,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    "modern": {
+      "Novice": [],
+      "Bronze": [],
+      "Silver": [],
+      "Gold": [],
+      "Diamond": [],
+      "Champion": [
+        100,
+        75,
+        50,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    }
+  },
+  "leagues": {
+    "wild": [
+      {
+        "name": "Novice",
+        "group": "Novice",
+        "league_limit": 3,
+        "level": 0,
+        "min_rating": 0,
+        "min_power": 0
+      },
+      {
+        "name": "Bronze III",
+        "group": "Bronze",
+        "league_limit": 3,
+        "level": 1,
+        "min_rating": 260,
+        "min_power": 0,
+        "season_rating_reset": 260
+      },
+      {
+        "name": "Bronze II",
+        "group": "Bronze",
+        "league_limit": 3,
+        "level": 1,
+        "min_rating": 400,
+        "min_power": 1000,
+        "season_rating_reset": 300
+      },
+      {
+        "name": "Bronze I",
+        "group": "Bronze",
+        "league_limit": 3,
+        "level": 1,
+        "min_rating": 700,
+        "min_power": 5000,
+        "season_rating_reset": 500
+      },
+      {
+        "name": "Silver III",
+        "group": "Silver",
+        "league_limit": 6,
+        "level": 2,
+        "min_rating": 1000,
+        "min_power": 15000,
+        "season_rating_reset": 600
+      },
+      {
+        "name": "Silver II",
+        "group": "Silver",
+        "league_limit": 6,
+        "level": 2,
+        "min_rating": 1300,
+        "min_power": 40000,
+        "season_rating_reset": 800
+      },
+      {
+        "name": "Silver I",
+        "group": "Silver",
+        "league_limit": 6,
+        "level": 2,
+        "min_rating": 1600,
+        "min_power": 70000,
+        "season_rating_reset": 1100
+      },
+      {
+        "name": "Gold III",
+        "group": "Gold",
+        "league_limit": 9,
+        "level": 3,
+        "min_rating": 1900,
+        "min_power": 100000,
+        "season_rating_reset": 1400
+      },
+      {
+        "name": "Gold II",
+        "group": "Gold",
+        "league_limit": 9,
+        "level": 3,
+        "min_rating": 2200,
+        "min_power": 150000,
+        "season_rating_reset": 1700
+      },
+      {
+        "name": "Gold I",
+        "group": "Gold",
+        "league_limit": 9,
+        "level": 3,
+        "min_rating": 2500,
+        "min_power": 200000,
+        "season_rating_reset": 2000
+      },
+      {
+        "name": "Diamond III",
+        "group": "Diamond",
+        "league_limit": 12,
+        "level": 4,
+        "min_rating": 2800,
+        "min_power": 250000,
+        "season_rating_reset": 2300
+      },
+      {
+        "name": "Diamond II",
+        "group": "Diamond",
+        "league_limit": 12,
+        "level": 4,
+        "min_rating": 3100,
+        "min_power": 325000,
+        "season_rating_reset": 2600
+      },
+      {
+        "name": "Diamond I",
+        "group": "Diamond",
+        "league_limit": 12,
+        "level": 4,
+        "min_rating": 3400,
+        "min_power": 400000,
+        "season_rating_reset": 2900
+      },
+      {
+        "name": "Champion III",
+        "group": "Champion",
+        "league_limit": 15,
+        "level": 4,
+        "min_rating": 3700,
+        "min_power": 500000,
+        "season_rating_reset": 3200
+      },
+      {
+        "name": "Champion II",
+        "group": "Champion",
+        "league_limit": 15,
+        "level": 4,
+        "min_rating": 4000,
+        "min_power": 500000,
+        "season_rating_reset": 3500
+      },
+      {
+        "name": "Champion I",
+        "group": "Champion",
+        "league_limit": 15,
+        "level": 4,
+        "min_rating": 4300,
+        "min_power": 500000,
+        "season_rating_reset": 3800
+      }
+    ],
+    "modern": [
+      {
+        "name": "Novice",
+        "group": "Novice",
+        "league_limit": 3,
+        "level": 0,
+        "min_rating": 0,
+        "min_power": 0
+      },
+      {
+        "name": "Bronze III",
+        "group": "Bronze",
+        "league_limit": 3,
+        "level": 1,
+        "min_rating": 260,
+        "min_power": 0,
+        "season_rating_reset": 260
+      },
+      {
+        "name": "Bronze II",
+        "group": "Bronze",
+        "league_limit": 3,
+        "level": 1,
+        "min_rating": 400,
+        "min_power": 500,
+        "season_rating_reset": 300
+      },
+      {
+        "name": "Bronze I",
+        "group": "Bronze",
+        "league_limit": 3,
+        "level": 1,
+        "min_rating": 700,
+        "min_power": 2500,
+        "season_rating_reset": 500
+      },
+      {
+        "name": "Silver III",
+        "group": "Silver",
+        "league_limit": 6,
+        "level": 2,
+        "min_rating": 1000,
+        "min_power": 7500,
+        "season_rating_reset": 600
+      },
+      {
+        "name": "Silver II",
+        "group": "Silver",
+        "league_limit": 6,
+        "level": 2,
+        "min_rating": 1300,
+        "min_power": 40000,
+        "season_rating_reset": 800
+      },
+      {
+        "name": "Silver I",
+        "group": "Silver",
+        "league_limit": 6,
+        "level": 2,
+        "min_rating": 1600,
+        "min_power": 70000,
+        "season_rating_reset": 1100
+      },
+      {
+        "name": "Gold III",
+        "group": "Gold",
+        "league_limit": 9,
+        "level": 3,
+        "min_rating": 1900,
+        "min_power": 100000,
+        "season_rating_reset": 1400
+      },
+      {
+        "name": "Gold II",
+        "group": "Gold",
+        "league_limit": 9,
+        "level": 3,
+        "min_rating": 2200,
+        "min_power": 150000,
+        "season_rating_reset": 1700
+      },
+      {
+        "name": "Gold I",
+        "group": "Gold",
+        "league_limit": 9,
+        "level": 3,
+        "min_rating": 2500,
+        "min_power": 200000,
+        "season_rating_reset": 2000
+      },
+      {
+        "name": "Diamond III",
+        "group": "Diamond",
+        "league_limit": 12,
+        "level": 4,
+        "min_rating": 2800,
+        "min_power": 250000,
+        "season_rating_reset": 2300
+      },
+      {
+        "name": "Diamond II",
+        "group": "Diamond",
+        "league_limit": 12,
+        "level": 4,
+        "min_rating": 3100,
+        "min_power": 325000,
+        "season_rating_reset": 2600
+      },
+      {
+        "name": "Diamond I",
+        "group": "Diamond",
+        "league_limit": 12,
+        "level": 4,
+        "min_rating": 3400,
+        "min_power": 400000,
+        "season_rating_reset": 2900
+      },
+      {
+        "name": "Champion III",
+        "group": "Champion",
+        "league_limit": 15,
+        "level": 4,
+        "min_rating": 3700,
+        "min_power": 500000,
+        "season_rating_reset": 3200
+      },
+      {
+        "name": "Champion II",
+        "group": "Champion",
+        "league_limit": 15,
+        "level": 4,
+        "min_rating": 4000,
+        "min_power": 500000,
+        "season_rating_reset": 3500
+      },
+      {
+        "name": "Champion I",
+        "group": "Champion",
+        "league_limit": 15,
+        "level": 4,
+        "min_rating": 4300,
+        "min_power": 500000,
+        "season_rating_reset": 3800
+      }
+    ]
+  },
+  "dec": {
+    "streak_bonus": 0.05,
+    "marshal_bonus": 0.1,
+    "gold_burn_bonus_2": 25,
+    "runeguard_bonus": 0.15,
+    "sentinel_bonus": 0.25,
+    "magister_bonus": 0.35,
+    "overseer_bonus": 0.5,
+    "vonarch_bonus": 0.5,
+    "gold_bonus": 0.1,
+    "pool_size_blocks": 28800,
+    "prize_pool_account": "splinterlands",
+    "start_block": 33000000,
+    "mystery_potion_blocks": 28800,
+    "dice_cost": 3000,
+    "dice_available": 300000,
+    "tokens_per_block": 45,
+    "ecr_regen_rate": 0.0868,
+    "orb_cost": 2500,
+    "orbs_available": 200000,
+    "curve_constant": 3,
+    "max_burn_bonus": 1.05,
+    "gold_burn_bonus": 50,
+    "promo_burn_bonus": 2,
+    "ecr_reduction_rate": [
+      [
+        5000,
+        0.95
+      ],
+      [
+        10000,
+        0.99
+      ]
+    ],
+    "alpha_burn_bonus": 2,
+    "untamed_burn_rate": [
+      10,
+      40,
+      200,
+      1000
+    ],
+    "warden_bonus": 0.05,
+    "beta_bonus": 0.05,
+    "burn_rate": [
+      15,
+      60,
+      300,
+      1500
+    ],
+    "streak_bonus_max": 0.5,
+    "reduction_pct": 1,
+    "reduction_blocks": 864000,
+    "pool_cut_pct": 500,
+    "alpha_bonus": 0.1,
+    "curve_reduction": 1000,
+    "eth_withdrawal_fee": 10000
+  },
+  "guilds": {
+    "guild_hall": {
+      "symbol": "DEC",
+      "levels": [
+        0,
+        10000,
+        20000,
+        30000,
+        50000,
+        100000,
+        250000,
+        500000,
+        750000,
+        1000000
+      ],
+      "member_limit": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        23,
+        25,
+        27,
+        30
+      ]
+    },
+    "quest_lodge": {
+      "symbol": "SCROLLS",
+      "levels": [
+        15,
+        30,
+        60,
+        100,
+        150,
+        200,
+        250,
+        300,
+        400,
+        600
+      ]
+    },
+    "merit_multiplier": [
+      1,
+      1.2,
+      1.4,
+      1.6,
+      1.8,
+      2,
+      2.2,
+      2.4,
+      2.6,
+      3
+    ],
+    "merit_constant": 500,
+    "max_brawl_size": 10,
+    "brawl_prep_duration": 172800000,
+    "brawl_maintenance_delay": 86400000,
+    "current_fray_edition": 12,
+    "sps_reward_decay": 0.99,
+    "sps_decay_day_of_month": 14,
+    "sps_tier_pct": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    "brawl_combat_duration": 172800000,
+    "brawl_results_duration": 86400000,
+    "brawl_cycle_end_offset": 3600000,
+    "brawl_staggered_start_interval": 120000,
+    "probation_period": 604800000,
+    "gp_refund_pct": 0.9,
+    "sps_full_rewards_min_guilds": 1,
+    "top3_bonus_enabled": "0",
+    "guild_shop": {
+      "cost": [
+        {
+          "symbol": "DEC",
+          "levels": [
+            10000,
+            20000,
+            30000,
+            50000,
+            100000,
+            250000,
+            500000,
+            750000,
+            1000000,
+            1500000
+          ]
+        },
+        {
+          "symbol": "CROWN",
+          "levels": [
+            0,
+            40,
+            100,
+            250,
+            400,
+            675,
+            1000,
+            1850,
+            2800,
+            4200
+          ]
+        }
+      ]
+    },
+    "barracks": {
+      "cost": [
+        {
+          "symbol": "DEC",
+          "levels": [
+            10000,
+            20000,
+            30000,
+            50000,
+            100000,
+            250000,
+            500000,
+            750000,
+            1000000,
+            1500000
+          ]
+        },
+        {
+          "symbol": "CROWN",
+          "levels": [
+            0,
+            40,
+            100,
+            250,
+            400,
+            675,
+            1000,
+            1850,
+            2800,
+            4200
+          ]
+        }
+      ]
+    },
+    "arena": {
+      "cost": [
+        {
+          "symbol": "DEC",
+          "levels": [
+            10000,
+            20000,
+            30000,
+            50000,
+            100000,
+            250000,
+            500000,
+            750000,
+            1000000,
+            1500000
+          ]
+        },
+        {
+          "symbol": "CROWN",
+          "levels": [
+            0,
+            40,
+            100,
+            250,
+            400,
+            675,
+            1000,
+            1850,
+            2800,
+            4200
+          ]
+        }
+      ]
+    },
+    "crown_split_pct": [
+      0.06,
+      0.04,
+      0.02
+    ],
+    "crown_multiplier": [
+      1,
+      1.5,
+      2.5,
+      3,
+      4,
+      4.5,
+      5.5,
+      6,
+      7,
+      8
+    ],
+    "creation_fee": 10000,
+    "dec_bonus_pct": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      12,
+      15,
+      20
+    ],
+    "shop_discount_pct": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10
+    ],
+    "rank_names": [
+      "Member",
+      "Sr. Member",
+      "Officer",
+      "Co-Leader",
+      "Leader"
+    ]
+  },
+  "barracks_perks": [
+    [
+      {
+        "bonus": "home_tie_break"
+      }
+    ],
+    [
+      {
+        "bonus": "gladiator_cap",
+        "delta": 1
+      }
+    ],
+    [
+      {
+        "bonus": "away_blocked_cards",
+        "delta": 1
+      }
+    ],
+    [
+      {
+        "bonus": "mana",
+        "delta": 1
+      }
+    ],
+    [
+      {
+        "bonus": "gladiator_cap",
+        "delta": 1
+      }
+    ],
+    [
+      {
+        "bonus": "away_blocked_cards",
+        "delta": 1
+      }
+    ],
+    [
+      {
+        "bonus": "gladiator_cap",
+        "delta": 1
+      }
+    ],
+    [
+      {
+        "bonus": "mana",
+        "delta": 1
+      }
+    ],
+    [
+      {
+        "stat": "speed",
+        "delta": -1,
+        "target": "away"
+      }
+    ],
+    [
+      {
+        "bonus": "gladiator_cap",
+        "delta": 1
+      }
+    ]
+  ],
+  "frays": [
+    [
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 0
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 0
+      },
+      {
+        "sets": [
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 0
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 0
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 1
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 1
+      },
+      {
+        "sets": [
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 1
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 1
+      },
+      {
+        "sets": [
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 1
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 1
+      }
+    ],
+    [
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 0
+      },
+      {
+        "sets": [
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 0
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 1
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 1
+      },
+      {
+        "sets": [
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 1
+      },
+      {
+        "sets": [
+          {
+            "core": 0,
+            "editions": []
+          },
+          {
+            "core": 1,
+            "editions": []
+          },
+          {
+            "core": 4,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 1
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 1
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 1
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 2
+      }
+    ],
+    [
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 1
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 1
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 4,
+            "editions": []
+          },
+          {
+            "core": 7,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 4,
+            "editions": []
+          },
+          {
+            "core": 7,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 0,
+            "editions": []
+          },
+          {
+            "core": 1,
+            "editions": []
+          },
+          {
+            "core": 4,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 1
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 3
+      }
+    ],
+    [
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 4,
+            "editions": []
+          },
+          {
+            "core": 7,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 4,
+            "editions": []
+          },
+          {
+            "core": 7,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 0,
+            "editions": []
+          },
+          {
+            "core": 1,
+            "editions": []
+          },
+          {
+            "core": 4,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 1
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 3
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 4
+      }
+    ],
+    [
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 0,
+            "editions": []
+          },
+          {
+            "core": 1,
+            "editions": []
+          },
+          {
+            "core": 4,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 4,
+            "editions": []
+          },
+          {
+            "core": 7,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 3
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 0,
+            "editions": []
+          },
+          {
+            "core": 1,
+            "editions": []
+          },
+          {
+            "core": 4,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 4,
+            "editions": []
+          },
+          {
+            "core": 7,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 4,
+            "editions": []
+          },
+          {
+            "core": 7,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 0,
+            "editions": []
+          },
+          {
+            "core": 1,
+            "editions": []
+          },
+          {
+            "core": 4,
+            "editions": []
+          }
+        ],
+        "foil": "s",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 2
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 2
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 3
+      },
+      {
+        "sets": [
+          {
+            "core": 0,
+            "editions": []
+          },
+          {
+            "core": 1,
+            "editions": []
+          },
+          {
+            "core": 4,
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 3
+      },
+      {
+        "sets": [],
+        "foil": "g",
+        "rating_level": 4
+      },
+      {
+        "sets": [
+          {
+            "core": 7,
+            "editions": []
+          },
+          {
+            "core": "c",
+            "editions": []
+          }
+        ],
+        "foil": "g",
+        "rating_level": 4
+      }
+    ]
+  ],
+  "supported_currencies": [
+    {
+      "name": "Dark Energy Crystals",
+      "currency": "DEC",
+      "type": "internal",
+      "tournament_enabled": true,
+      "payment_enabled": false,
+      "usd_value": 0.001,
+      "precision": 3
+    },
+    {
+      "name": "Dollars",
+      "currency": "USD",
+      "type": "paypal",
+      "tournament_enabled": false,
+      "payment_enabled": true,
+      "usd_value": 1,
+      "precision": 2
+    },
+    {
+      "name": "Splintershards",
+      "currency": "SPS",
+      "type": "internal",
+      "tournament_enabled": true,
+      "payment_enabled": true,
+      "precision": 3
+    },
+    {
+      "name": "Basic Attention Token",
+      "currency": "BAT",
+      "type": "multi-network",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+      "networks": {
+        "eth": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+        "bsc": "0x101d82428437127bF1608F699CD651e6Abf9766E"
+      }
+    },
+    {
+      "name": "Binance USD",
+      "currency": "BUSD",
+      "type": "bep20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
+    },
+    {
+      "name": "Bitcoin",
+      "currency": "BTC",
+      "type": "coinbase",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 8
+    },
+    {
+      "name": "Cub Defi",
+      "currency": "CUB",
+      "type": "bep20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0x50D809c74e0B8e49e7B4c65BB3109AbE3Ff4C1C1"
+    },
+    {
+      "name": "Bitcoin Cash",
+      "currency": "BCH",
+      "type": "coinbase",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18
+    },
+    {
+      "name": "Dai Stablecoin",
+      "currency": "DAI",
+      "type": "erc20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+    },
+    {
+      "name": "Electroneum",
+      "currency": "ETN",
+      "type": "coinpayments",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 8
+    },
+    {
+      "name": "Emp Money",
+      "currency": "EMP",
+      "type": "bep20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0x3b248cefa87f836a4e6f6d6c9b42991b88dc1d58"
+    },
+    {
+      "name": "Enjin Coin",
+      "currency": "ENJ",
+      "type": "erc20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c"
+    },
+    {
+      "name": "EOS",
+      "currency": "EOS",
+      "type": "eos",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 4,
+      "payment_address": "splinterland"
+    },
+    {
+      "name": "Ether",
+      "currency": "ETH",
+      "type": "coinbase",
+      "tournament_enabled": false,
+      "payment_enabled": true,
+      "precision": 18
+    },
+    {
+      "name": "Gala Games",
+      "currency": "GALA",
+      "type": "erc20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 8,
+      "contract_address": "0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA"
+    },
+    {
+      "name": "Game Credits",
+      "currency": "GAME",
+      "type": "erc20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0x63f88A2298a5c4AEE3c216Aa6D926B184a4b2437"
+    },
+    {
+      "name": "GLUSD",
+      "currency": "GLUSD",
+      "type": "hive_engine",
+      "tournament_enabled": false,
+      "payment_enabled": true,
+      "precision": 3,
+      "payment_address": "steemmonsters"
+    },
+    {
+      "name": "GLX",
+      "currency": "GLX",
+      "type": "hive_engine",
+      "tournament_enabled": false,
+      "payment_enabled": true,
+      "precision": 3,
+      "payment_address": "steemmonsters"
+    },
+    {
+      "name": "Hive",
+      "currency": "HIVE",
+      "type": "hive",
+      "tournament_enabled": true,
+      "payment_enabled": true,
+      "precision": 3,
+      "payment_address": "steemmonsters"
+    },
+    {
+      "name": "Hive Dollars",
+      "currency": "HBD",
+      "type": "hive",
+      "tournament_enabled": true,
+      "payment_enabled": true,
+      "precision": 3,
+      "payment_address": "steemmonsters"
+    },
+    {
+      "name": "HOOP",
+      "currency": "HOOP",
+      "type": "bep20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0xF19cfb40B3774dF6Eed83169Ad5aB0Aaf6865F25"
+    },
+    {
+      "name": "Huobi Token",
+      "currency": "HT",
+      "type": "erc20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0x6f259637dcd74c767781e37bc6133cd6a68aa161"
+    },
+    {
+      "name": "LeoFinance",
+      "currency": "LEO",
+      "type": "hive_engine",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 3,
+      "payment_address": "steemmonsters"
+    },
+    {
+      "name": "Litecoin",
+      "currency": "LTC",
+      "type": "coinbase",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 8
+    },
+    {
+      "name": "Polyient Games Unity",
+      "currency": "PGU",
+      "type": "erc20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0x98c36c0e953463BD5146C8783ce081CE1d187AcF"
+    },
+    {
+      "name": "Sandbox",
+      "currency": "SAND",
+      "type": "erc20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
+    },
+    {
+      "name": "Steem",
+      "currency": "STEEM",
+      "type": "steem",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 3,
+      "payment_address": "steemmonsters"
+    },
+    {
+      "name": "Steem Dollars",
+      "currency": "SBD",
+      "type": "steem",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 3,
+      "payment_address": "steemmonsters"
+    },
+    {
+      "name": "Tron",
+      "currency": "TRX",
+      "type": "tron",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 6
+    },
+    {
+      "name": "Telos",
+      "currency": "TLOS",
+      "type": "eos",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 4,
+      "payment_address": "splintrlands"
+    },
+    {
+      "name": "Uniswap",
+      "currency": "UNI",
+      "type": "erc20",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18,
+      "contract_address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
+    },
+    {
+      "name": "WAX",
+      "currency": "WAX",
+      "type": "wax",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 4,
+      "payment_address": "splintrlands"
+    },
+    {
+      "name": "dCity Token",
+      "currency": "SIM",
+      "type": "hive_engine",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 3
+    },
+    {
+      "name": "dCity Entry",
+      "currency": "ENTRY",
+      "type": "hive_engine",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 0
+    },
+    {
+      "name": "CineTV",
+      "currency": "CINE",
+      "type": "hive_engine",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 3
+    },
+    {
+      "name": "Peakmonsters",
+      "currency": "PKM",
+      "type": "hive_engine",
+      "tournament_enabled": true,
+      "payment_enabled": false,
+      "precision": 3
+    },
+    {
+      "name": "Sprint Training Super",
+      "currency": "STSUPER",
+      "type": "hive_engine",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 3
+    },
+    {
+      "name": "Sprint Training Regular",
+      "currency": "STREGULAR",
+      "type": "hive_engine",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 3
+    },
+    {
+      "name": "Sprint Training Mini",
+      "currency": "STMINI",
+      "type": "hive_engine",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 3
+    },
+    {
+      "name": "Sprint Training Jumbo",
+      "currency": "STJUMBO",
+      "type": "hive_engine",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 3
+    },
+    {
+      "name": "Vouchers",
+      "currency": "VOUCHER",
+      "type": "internal",
+      "tournament_enabled": true,
+      "payment_enabled": false,
+      "precision": 3
+    },
+    {
+      "name": "THGaming",
+      "currency": "THGAMING",
+      "type": "hive_engine",
+      "tournament_enabled": true,
+      "payment_enabled": false,
+      "precision": 3
+    },
+    {
+      "currency": "SG-BETA",
+      "type": "tron",
+      "token_id": "1002350",
+      "asset_name": "31303032333530",
+      "tournament_enabled": false
+    },
+    {
+      "currency": "SG-PROMO",
+      "type": "tron",
+      "token_id": "1002351",
+      "asset_name": "31303032333531",
+      "tournament_enabled": false
+    },
+    {
+      "currency": "SG-STARTER",
+      "type": "tron",
+      "token_id": "1002352",
+      "asset_name": "31303032333532",
+      "tournament_enabled": false
+    },
+    {
+      "currency": "SG-MAXSET",
+      "type": "tron",
+      "token_id": "1002355",
+      "asset_name": "31303032333535",
+      "tournament_enabled": false
+    },
+    {
+      "currency": "DEC-TRON",
+      "type": "tron",
+      "symbol": "DEC",
+      "token_id": "1002361",
+      "asset_name": "31303032333631",
+      "tournament_enabled": false
+    },
+    {
+      "name": "PROMO",
+      "currency": "PROMO",
+      "type": "external",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 0
+    },
+    {
+      "name": "ApeCoin",
+      "currency": "APE",
+      "type": "coinbase",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18
+    },
+    {
+      "name": "Dogecoin",
+      "currency": "DOGE",
+      "type": "coinbase",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18
+    },
+    {
+      "name": "SHIBA INU",
+      "currency": "SHIB",
+      "type": "coinbase",
+      "tournament_enabled": false,
+      "payment_enabled": false,
+      "precision": 18
+    },
+    {
+      "name": "Tether",
+      "currency": "USDT",
+      "type": "coinbase",
+      "tournament_enabled": false,
+      "payment_enabled": true,
+      "precision": 18
+    },
+    {
+      "name": "USD Coin",
+      "currency": "USDC",
+      "type": "coinbase",
+      "tournament_enabled": false,
+      "payment_enabled": true,
+      "precision": 18
+    }
+  ],
+  "tournament_prize_types": {
+    "PLOT": {
+      "name": "Land Plot Claim",
+      "image_filename": "icon_claim_plot_256.png"
+    },
+    "TOTEML": {
+      "name": "Legendary Totem Claim",
+      "image_filename": "icon_totem_4_legendary_300.png"
+    },
+    "TOTEME": {
+      "name": "Epic Totem Claim",
+      "image_filename": "icon_totem_3_epic_300.png"
+    },
+    "TOTEMR": {
+      "name": "Rare Totem Claim",
+      "image_filename": "icon_totem_2_rare_300.png"
+    },
+    "TOTEMC": {
+      "name": "Common Totem Claim",
+      "image_filename": "icon_totem_1_common_300.png"
+    },
+    "ALPHA": {
+      "name": "Alpha Pack",
+      "image_filename": "icon_pack_alpha.png"
+    },
+    "BETA": {
+      "name": "Beta Pack",
+      "image_filename": "icon_pack_beta.png"
+    },
+    "UNTAMED": {
+      "name": "Untamed Pack",
+      "image_filename": "icon_pack_untamed.png"
+    },
+    "ORB": {
+      "name": "Essence Orb",
+      "image_filename": "icon_pack_orb.png"
+    },
+    "DICE": {
+      "name": "AZMARE Dice",
+      "image_filename": "icon_pack_dice.png"
+    },
+    "CHAOS": {
+      "name": "Chaos Legion Pack",
+      "image_filename": "img_pack_chaos-legion_200.png"
+    },
+    "NIGHTMARE": {
+      "name": "Nightmare Pack",
+      "image_filename": "img_pack_td_200.png"
+    },
+    "RIFT": {
+      "name": "Riftwatchers Pack",
+      "image_filename": "img_pack_riftwatchers_200.png"
+    },
+    "REBELLION": {
+      "name": "Rebellion Pack",
+      "image_filename": "img_pack_rebellion_250.png"
+    }
+  },
+  "transfer_cooldown_blocks": 57600,
+  "untamed_edition_date": "2019-11-30T17:00:00.000Z",
+  "active_auth_ops": [
+    "create_guild",
+    "guild_contribution",
+    "add_wallet",
+    "market_purchase",
+    "market_rent",
+    "market_renew_rental",
+    "gift_cards",
+    "sell_cards",
+    "cancel_sell",
+    "cancel_all",
+    "update_price",
+    "convert_cards",
+    "gift_packs",
+    "burn_cards",
+    "transfer_skins",
+    "token_transfer",
+    "update_authority",
+    "transfer_items",
+    "trade_title",
+    "lock_assets",
+    "unlock_assets",
+    "cancel_unlock_assets",
+    "token_transfer_multi",
+    "proposal_vote",
+    "delegate_rewards",
+    "undelegate_rewards",
+    "shop_purchase",
+    "marketplace_list",
+    "marketplace_purchase",
+    "marketplace_cancel",
+    "redeem_land",
+    "set_authority",
+    "update_locked_assets",
+    "burn_tokens",
+    "guild_get_gp",
+    "rent_token",
+    "cancel_rent_token",
+    "fill_token_rental",
+    "unstake_tokens",
+    "cancel_unstake_tokens",
+    "reroll_quest",
+    "resource_shipment",
+    "redeem_totem",
+    "cnf_claim_airdrop",
+    "claim_staking_rewards",
+    "credits_to_sk"
+  ],
+  "banned_domains": [
+    "yopmail.com",
+    "yopmail.fr",
+    "yopmail.net",
+    "cool.fr.nf",
+    "jetable.fr.nf",
+    "courriel.fr.nf",
+    "moncourrier.fr.nf",
+    "monemail.fr.nf",
+    "monmail.fr.nf",
+    "hide.biz.st",
+    "mymail.infos.st"
+  ],
+  "version": "0.7.139",
+  "config_version": 131,
+  "land_sale": {
+    "plot_price": 20,
+    "tract_price": 1700,
+    "region_price": 15000,
+    "plots_available": 140000,
+    "plot_plots": 1,
+    "tract_plots": 100,
+    "region_plots": 1000,
+    "start_date": "2021-01-04T16:00:00.000Z"
+  },
+  "dice": {
+    "airdrops": [
+      {
+        "name": "Lensmaster",
+        "id": 277,
+        "chance": 0.00666
+      },
+      {
+        "name": "Theorosa Nightshade",
+        "id": 290,
+        "chance": 0.00571
+      },
+      {
+        "name": "Two Gun Pete",
+        "id": 296,
+        "chance": 0.005
+      },
+      {
+        "name": "Epona",
+        "id": 297,
+        "chance": 0.00444
+      },
+      {
+        "name": "Aganju",
+        "id": 298,
+        "chance": 0.004
+      }
+    ]
+  },
+  "untamed": {
+    "airdrops": [
+      {
+        "name": "Diamond Dragon",
+        "id": 210,
+        "chance": 0.00333
+      },
+      {
+        "name": "Gloridax Guardian",
+        "id": 211,
+        "chance": 0.00333
+      },
+      {
+        "name": "Drake of Arnak",
+        "id": 224,
+        "chance": 0.042
+      },
+      {
+        "name": "Mimosa Nightshade",
+        "id": 235,
+        "chance": 0.002857
+      },
+      {
+        "name": "Yodin Zaku",
+        "id": 236,
+        "chance": 0.00267
+      },
+      {
+        "name": "Chanseus the Great",
+        "id": 239,
+        "chance": 0.0025
+      },
+      {
+        "name": "Lir Deepswimmer",
+        "id": 254,
+        "chance": 0.00236
+      },
+      {
+        "name": "Scarred Llama Mage",
+        "id": 278,
+        "chance": 0.00222
+      },
+      {
+        "name": "Beatrix Ironhand",
+        "id": 279,
+        "chance": 0.01538
+      },
+      {
+        "name": "Byzantine Kitty",
+        "id": 291,
+        "chance": 0.00211
+      },
+      {
+        "name": "Goblin Firemage",
+        "id": 292,
+        "chance": 0.01429
+      },
+      {
+        "name": "Lobstradamus",
+        "id": 293,
+        "chance": 0.01333
+      },
+      {
+        "name": "The Gorlodon",
+        "id": 294,
+        "chance": 0.0125
+      },
+      {
+        "name": "Hero of Beyond",
+        "id": 295,
+        "chance": 0.0118
+      }
+    ]
+  },
+  "chaos_legion": {
+    "voucher_drop_rate": 20000,
+    "main_sale_start": "2021-12-08T05:00:00.000Z",
+    "sale3_start": "2022-01-17T17:00:00.000Z",
+    "airdrops": [
+      {
+        "name": "Doctor Blight",
+        "id": 352,
+        "chance": 0.02,
+        "gold_guarantee": 1000,
+        "claim_date": "2021-12-08T05:00:00Z"
+      },
+      {
+        "name": "Baakjira",
+        "id": 443,
+        "chance": 0.003333,
+        "gold_chance": 0.04,
+        "claim_date": "2022-01-13T08:00:00Z"
+      },
+      {
+        "name": "Uriel the Purifier",
+        "id": 444,
+        "chance": 0.003333,
+        "gold_chance": 0.04,
+        "claim_date": "2022-01-13T08:00:00Z"
+      },
+      {
+        "name": "Lira the Dark",
+        "id": 445,
+        "chance": 0.002857,
+        "gold_chance": 0.04,
+        "claim_date": "2022-01-20T09:00:00Z"
+      },
+      {
+        "name": "Iza the Fanged",
+        "id": 446,
+        "chance": 0.002857,
+        "gold_chance": 0.04,
+        "claim_date": "2022-01-20T09:00:00Z"
+      },
+      {
+        "name": "Grum Flameblade",
+        "id": 447,
+        "chance": 0.002857,
+        "gold_chance": 0.04,
+        "claim_date": "2022-01-20T09:00:00Z"
+      },
+      {
+        "name": "Spirit Hoarder",
+        "id": 448,
+        "chance": 0.002,
+        "gold_chance": 0.04,
+        "claim_date": "2022-01-29T03:30:00Z"
+      },
+      {
+        "name": "Carnage Titan",
+        "id": 450,
+        "chance": 0.001904,
+        "gold_chance": 0.04,
+        "claim_date": "2022-03-22T03:00:00Z"
+      },
+      {
+        "name": "Grandmaster Rathe",
+        "id": 463,
+        "chance": 0.001818,
+        "gold_chance": 0.04,
+        "claim_date": "2022-07-10T01:30:00Z"
+      },
+      {
+        "name": "Conqueror Jacek",
+        "id": 464,
+        "chance": 0.001739,
+        "gold_chance": 0.04,
+        "claim_date": "2022-09-23T18:00:00Z"
+      },
+      {
+        "name": "Possibilus the Wise",
+        "id": 507,
+        "chance": 0.001666,
+        "gold_chance": 0.04,
+        "claim_date": "2022-12-10T15:15:00Z"
+      },
+      {
+        "name": "Immortalis",
+        "id": 509,
+        "chance": 0.0016,
+        "gold_chance": 0.04,
+        "claim_date": "2022-12-30T15:15:00Z"
+      },
+      {
+        "name": "Astral Entity",
+        "id": 553,
+        "chance": 0.001538,
+        "gold_chance": 0.04,
+        "claim_date": "2023-02-01T10:00:00Z"
+      },
+      {
+        "name": "Lily Shieldpaw",
+        "id": 554,
+        "chance": 0.001481,
+        "gold_chance": 0.04,
+        "claim_date": "2023-02-26T10:30:00Z"
+      }
+    ],
+    "sale2_end": "2022-01-13T04:59:59.000Z",
+    "pre_sale_end": "2021-11-25T04:59:59.000Z",
+    "pre_sale_start": "2021-10-18T04:00:00.000Z",
+    "voucher_drop_duration": 15,
+    "voucher_drop_start": "2021-12-08T06:00:00.000Z",
+    "pack_price": 4
+  },
+  "riftwatchers": {
+    "presale_sale_start": "2022-09-15T18:00:00.000Z",
+    "pack_price": 5,
+    "main_sale_start": "2022-09-27T18:00:00.000Z",
+    "airdrops": [
+      {
+        "name": "Oshuur Constantia",
+        "id": 493,
+        "chance": 0.02,
+        "gold_chance": 0.04,
+        "gold_guarantee": 1000,
+        "claim_date": "2022-10-21T01:30:00Z"
+      },
+      {
+        "name": "Kain Hace",
+        "id": 504,
+        "chance": 0.005,
+        "gold_chance": 0.04,
+        "claim_date": "2022-11-08T17:00:00Z"
+      },
+      {
+        "name": "Ancient Redwood",
+        "id": 556,
+        "chance": 0.004444,
+        "gold_chance": 0.04,
+        "claim_date": "2023-03-18T08:30:00Z"
+      },
+      {
+        "name": "Sea Wreck",
+        "id": 558,
+        "chance": 0.004,
+        "gold_chance": 0.04,
+        "claim_date": "2023-09-12T16:00:00Z"
+      },
+      {
+        "name": "Immolation",
+        "id": 559,
+        "chance": 0.003636,
+        "gold_chance": 0.04,
+        "claim_date": "2023-10-10T16:00:00Z"
+      },
+      {
+        "name": "Inevitable",
+        "id": 560,
+        "chance": 0.003333,
+        "gold_chance": 0.04,
+        "claim_date": "2023-11-14T17:00:00Z"
+      }
+    ]
+  },
+  "rebellion": {
+    "presale_sale_end": "2023-11-17T18:00:00.000Z",
+    "main_sale_start": "2023-12-05T17:00:00.000Z",
+    "presale_sale_start": "2023-10-18T18:00:00.000Z",
+    "airdrops": [
+      {
+        "name": "Mantaroth",
+        "id": 635,
+        "chance": 0.01,
+        "gold_chance": 0.04,
+        "gold_guarantee": 2500
+      },
+      {
+        "name": "Grimbardun Smith",
+        "id": 633,
+        "chance": 0.1,
+        "fixed_chance": true,
+        "gold_chance": 0.04,
+        "gold_guarantee": 250
+      }
+    ],
+    "pack_price": 4
+  },
+  "conflicts": {
+    "max_packs_per_wagon": 100,
+    "intro_video_enabled": "1",
+    "reward_point_threshold": 100000,
+    "staked_pack_value": 100
+  },
+  "tower_defense": {
+    "general_sale_pack_price": 8000,
+    "general_sale_end": "2023-07-06T20:00:00.000Z",
+    "presale_sale_start": "2022-09-20T20:00:00.000Z",
+    "general_sale_voucher_discount": 3000,
+    "general_sale_start": "2022-09-27T20:00:00.000Z",
+    "presale_pack_price": 5000
+  },
+  "runi": {
+    "runi_summon_end": "2022-11-25T18:00:00.000Z",
+    "whitelist_sale_start": "2022-09-22T18:00:00.000Z",
+    "general_summon_start": "2022-11-03T18:00:00.000Z",
+    "runi_summon_start": "2022-10-25T18:00:00.000Z",
+    "is_runi_enabled": 1
+  },
+  "potions": [
+    {
+      "id": "legendary",
+      "name": "Legendary",
+      "item_id": 3,
+      "price_per_charge": 40,
+      "value": 100,
+      "bonuses": [
+        {
+          "min": 500,
+          "bonus_pct": 10
+        },
+        {
+          "min": 2500,
+          "bonus_pct": 15
+        }
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Alchemy",
+      "item_id": 6,
+      "price_per_charge": 50,
+      "value": 100,
+      "bonuses": [
+        {
+          "min": 500,
+          "bonus_pct": 10
+        },
+        {
+          "min": 2500,
+          "bonus_pct": 15
+        }
+      ]
+    },
+    {
+      "id": "quest",
+      "name": "Quest",
+      "item_id": 9,
+      "price_per_charge": 750,
+      "value": 5,
+      "bonuses": [
+        {
+          "min": 10,
+          "bonus_pct": 10
+        },
+        {
+          "min": 100,
+          "bonus_pct": 15
+        }
+      ]
+    },
+    {
+      "id": "mystery",
+      "name": "Mystery",
+      "item_id": 12,
+      "price_per_charge": 1200,
+      "value": 100,
+      "bonuses": [
+        {
+          "min": 10,
+          "bonus_pct": 10
+        },
+        {
+          "min": 100,
+          "bonus_pct": 15
+        }
+      ]
+    }
+  ],
+  "promotions": [
+    ""
+  ],
+  "sps": {
+    "staking_rewards": {
+      "tokens_per_block": 8.56164,
+      "reduction_blocks": 864000,
+      "reduction_pct": 1,
+      "pool_decline": 0.99,
+      "start_block": 56186000,
+      "pool_start": "2021-08-02 16:56:30",
+      "pool_stop": "2027-01-02 16:56:30"
+    },
+    "staking_rewards_acc_tokens_per_share": 0.8734897568970322,
+    "staking_rewards_last_reward_block": 88655483,
+    "staking_rewards_voucher_acc_tokens_per_share": 0.029056777094541093,
+    "staking_rewards_voucher_last_reward_block": 88655483,
+    "unstaking_periods": 4,
+    "unstaking_interval_seconds": 604800,
+    "staking_rewards_voucher": {
+      "tokens_per_block": 0.69444,
+      "start_block": 56186000,
+      "reduction_pct": 0,
+      "pool_decline": 1,
+      "pool_start": "2021-08-02 16:56:30",
+      "pool_stop": "2099-01-02 16:56:30"
+    }
+  },
+  "battles_disabled": 0,
+  "blocks_are_behind": false,
+  "process_land_blocks": true,
+  "process_survey_op": true,
+  "dec_batteries": {
+    "sale_start": "2023-02-08T18:00:00.000Z",
+    "sale_end": "2023-04-09T18:00:00.000Z",
+    "conversion_rates": {
+      "DEC": 0.8,
+      "VOUCHER": 0.005
+    }
+  },
+  "market_rental": {
+    "minimum_rental_days": 2,
+    "maximum_rental_days": 180
+  },
+  "loot_chests": {
+    "quest": [
+      {
+        "base": 390,
+        "step_multiplier": 1.2,
+        "max": 30,
+        "reroll_cost": 0.5
+      },
+      {
+        "base": 6500,
+        "step_multiplier": 1.13,
+        "max": 30,
+        "reroll_cost": 1
+      },
+      {
+        "base": 22500,
+        "step_multiplier": 1.09,
+        "max": 30,
+        "reroll_cost": 5
+      },
+      {
+        "base": 53750,
+        "step_multiplier": 1.062,
+        "max": 30,
+        "reroll_cost": 10
+      },
+      {
+        "base": 112500,
+        "step_multiplier": 1.038,
+        "max": 30,
+        "reroll_cost": 15
+      }
+    ],
+    "season": [
+      {
+        "base": 390,
+        "step_multiplier": 1.0521,
+        "max": 150
+      },
+      {
+        "base": 6500,
+        "step_multiplier": 1.0345,
+        "max": 150
+      },
+      {
+        "base": 22500,
+        "step_multiplier": 1.026,
+        "max": 150
+      },
+      {
+        "base": 53750,
+        "step_multiplier": 1.0202,
+        "max": 150
+      },
+      {
+        "base": 112500,
+        "step_multiplier": 1.0154,
+        "max": 150
+      }
+    ],
+    "boosts": {
+      "bronze": {
+        "rarity_boost": -0.75,
+        "token_multiplier": 1,
+        "gold_percent": 0.005,
+        "rarity_percents": [
+          0.206,
+          0.006,
+          0.001,
+          0
+        ],
+        "max_stacks_by_rarity": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_stacks_by_rarity_gold": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "silver": {
+        "rarity_boost": 0,
+        "token_multiplier": 2,
+        "gold_percent": 0.01,
+        "rarity_percents": [
+          0.224,
+          0.024,
+          0.004,
+          0
+        ],
+        "max_stacks_by_rarity": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "max_stacks_by_rarity_gold": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "gold": {
+        "rarity_boost": 0.5,
+        "token_multiplier": 8,
+        "gold_percent": 0.02,
+        "rarity_percents": [
+          0.24,
+          0.04,
+          0.01,
+          0
+        ],
+        "max_stacks_by_rarity": [
+          7,
+          5,
+          2,
+          1
+        ],
+        "max_stacks_by_rarity_gold": [
+          3,
+          3,
+          2,
+          2
+        ]
+      },
+      "diamond": {
+        "rarity_boost": 1,
+        "token_multiplier": 16,
+        "gold_percent": 0.04,
+        "rarity_percents": [
+          0.266,
+          0.066,
+          0.016,
+          0
+        ],
+        "max_stacks_by_rarity": [
+          11,
+          9,
+          2,
+          2
+        ],
+        "max_stacks_by_rarity_gold": [
+          5,
+          5,
+          2,
+          3
+        ]
+      },
+      "champion": {
+        "rarity_boost": 3,
+        "token_multiplier": 48,
+        "gold_percent": 0.06,
+        "rarity_percents": [
+          0.312,
+          0.112,
+          0.032,
+          0
+        ],
+        "max_stacks_by_rarity": [
+          15,
+          11,
+          2,
+          2
+        ],
+        "max_stacks_by_rarity_gold": [
+          7,
+          7,
+          2,
+          3
+        ]
+      }
+    },
+    "reward_shop": {
+      "minor": {
+        "items": {
+          "reward_card": 0.33,
+          "merits": 0.63,
+          "energy": 0.68,
+          "potion": 0.99999,
+          "jackpot": 1
+        },
+        "min_potions": 1,
+        "max_potions": 1,
+        "min_merits": 20,
+        "max_merits": 180,
+        "min_energy": 1,
+        "max_energy": 1,
+        "gold_percent": 0.0025,
+        "rarity_percents": [
+          0.211,
+          0.011,
+          0.001,
+          0
+        ],
+        "min_stacks_by_rarity": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_stacks_by_rarity": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "min_stacks_by_rarity_gold": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_stacks_by_rarity_gold": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "major": {
+        "items": {
+          "reward_card": 0.33,
+          "merits": 0.59,
+          "energy": 0.69,
+          "potion": 0.9999,
+          "jackpot": 1
+        },
+        "min_potions": 3,
+        "max_potions": 7,
+        "min_merits": 250,
+        "max_merits": 750,
+        "min_energy": 1,
+        "max_energy": 4,
+        "gold_percent": 0.0075,
+        "rarity_percents": [
+          0.24,
+          0.04,
+          0.01,
+          0
+        ],
+        "min_stacks_by_rarity": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "max_stacks_by_rarity": [
+          6,
+          5,
+          2,
+          1
+        ],
+        "min_stacks_by_rarity_gold": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_stacks_by_rarity_gold": [
+          3,
+          3,
+          2,
+          2
+        ]
+      },
+      "ultimate": {
+        "items": {
+          "reward_card": 0.33,
+          "merits": 0.53,
+          "energy": 0.73,
+          "potion": 0.999,
+          "jackpot": 1
+        },
+        "min_potions": 5,
+        "max_potions": 15,
+        "min_merits": 1000,
+        "max_merits": 3000,
+        "min_energy": 3,
+        "max_energy": 5,
+        "gold_percent": 0.04,
+        "rarity_percents": [
+          0.312,
+          0.112,
+          0.032,
+          0
+        ],
+        "min_stacks_by_rarity": [
+          5,
+          3,
+          1,
+          1
+        ],
+        "max_stacks_by_rarity": [
+          11,
+          9,
+          2,
+          2
+        ],
+        "min_stacks_by_rarity_gold": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "max_stacks_by_rarity_gold": [
+          6,
+          6,
+          2,
+          3
+        ]
+      }
+    }
+  },
+  "conversion_rate": {
+    "sps_dec": 975
+  },
+  "reward_pools": {
+    "claim_limit": 1,
+    "claim_limit_time": 82800000
+  },
+  "daily_quests": [
+    {
+      "name": "lyanna",
+      "active": true,
+      "objective_type": "splinter",
+      "min_rating": 0,
+      "data": {
+        "color": "Green",
+        "action": "win",
+        "splinter": "Earth",
+        "value": "Earth",
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Many of the fey races are especially adept at harnessing earth elemental mana, which is concentrated in the land itself. Imbue yourself with the essence of an earth summoner and win battles in the arena to perfect your mastery of it."
+      }
+    },
+    {
+      "name": "rising",
+      "active": true,
+      "objective_type": "splinter",
+      "min_rating": 0,
+      "data": {
+        "color": "Black",
+        "action": "win",
+        "splinter": "Death",
+        "value": "Death",
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Through death, the Dark Eternals seek life everlasting. Learn the formidable tactics of the revenants by invoking a death summoner and using dark magic to find victory in the arena."
+      }
+    },
+    {
+      "name": "defend",
+      "active": true,
+      "objective_type": "splinter",
+      "min_rating": 0,
+      "data": {
+        "color": "White",
+        "action": "win",
+        "splinter": "Life",
+        "value": "Life",
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "While life elemental mana is found within light and the heavens, it is also woven into the fabric of time and space. Do not be fooled, though. It can both heal and destroy. Invoke a life summoner and practice using life magic to destroy your opponent in the arena."
+      }
+    },
+    {
+      "name": "pirate",
+      "active": true,
+      "objective_type": "splinter",
+      "min_rating": 0,
+      "data": {
+        "color": "Blue",
+        "action": "win",
+        "splinter": "Water",
+        "value": "Water",
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Don't be fooled by fanciful tales of sunshine and tropical beaches. The archipelago and abyssal waters of Azmare are brutal and violent. Learn to tame them by imbuing yourself with the essence of a water summoner and battling for glory in the arena."
+      }
+    },
+    {
+      "name": "stir",
+      "active": true,
+      "objective_type": "splinter",
+      "min_rating": 0,
+      "data": {
+        "color": "Red",
+        "action": "win",
+        "splinter": "Fire",
+        "value": "Fire",
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "The Torch believe that, one day, the Goddess Mitreyya will cleanse the Splinterlands in glorious fire. To prepare for her coming, hone your skills in the arena while imbued with the essence of a fire summoner."
+      }
+    },
+    {
+      "name": "gloridax",
+      "active": true,
+      "objective_type": "splinter",
+      "min_rating": 1900,
+      "data": {
+        "color": "Gold",
+        "action": "win",
+        "splinter": "Dragon",
+        "value": "Dragon",
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Dragon magic comes from the dragons themselves and is infused with their will to dominate and control. Demonstrate your own control by invoking a dragon summoner and exerting your will to dominate your opponent."
+      }
+    },
+    {
+      "name": "stealth",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 100,
+      "data": {
+        "action": "win",
+        "value": "Stealth",
+        "abilities": [
+          "sneak",
+          "snipe",
+          "opportunity"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "It is often best to attack your opponent where they are unprepared and least expect it. Practice using Sneak, Snipe, or Opportunity to take your enemy by surprise and decimate their back row while winning as many arena battles as possible."
+      }
+    },
+    {
+      "name": "armor",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 100,
+      "data": {
+        "action": "win",
+        "value": "Defend",
+        "abilities": [
+          "shield",
+          "repair"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "When facing melee and ranged attacks, the best defense isn’t necessarily a good offense. Sometimes it involves a sturdy shield, a tough hide, or a trusty armorer. Use Shield or Repair to weather the storm and see you through to victory."
+      }
+    },
+    {
+      "name": "healing",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 100,
+      "data": {
+        "action": "win",
+        "value": "Healing",
+        "abilities": [
+          "heal",
+          "tank heal",
+          "cleanse",
+          "triage"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "A battle mage will rarely benefit from a prolonged fight against an opponent who uses spells of healing to sustain their forces. Practice using Tank Heal, Heal, Cleanse, or Triage to outlast your opponent in the arena."
+      }
+    },
+    {
+      "name": "flying",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 1000,
+      "data": {
+        "action": "win",
+        "value": "Flying",
+        "abilities": [
+          "flying"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "The battle mage who occupies the high ground fights at an advantage. The battle mages who own the skies, however, hold the greatest advantage of all. Use units with Flying to rain destruction upon your opponent."
+      }
+    },
+    {
+      "name": "anti-melee",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 1000,
+      "data": {
+        "action": "win",
+        "value": "Anti Melee",
+        "abilities": [
+          "thorns",
+          "retaliate"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Securing yourself against defeat lies in your own hands. Any opponent who employs melee attacks, though, provides the opportunity of defeating themself. Use Thorns or Retaliate to turn your opponent's attacks against them."
+      }
+    },
+    {
+      "name": "anti-magic",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 1900,
+      "data": {
+        "action": "win",
+        "value": "Anti Magic",
+        "abilities": [
+          "void",
+          "void armor",
+          "phase"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Magic attacks are lethal from anywhere. They can cut through armor and find their mark against even the swiftest of targets. But Void, Phase, and Void Armor will dampen their effectiveness. Use any of these abilities to counter your opponent's magic attacks and win."
+      }
+    },
+    {
+      "name": "exploits",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 1900,
+      "data": {
+        "action": "win",
+        "value": "Exploits",
+        "abilities": [
+          "oppress",
+          "giant killer",
+          "deathblow",
+          "knock out"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Anticipate your opponent's strategy and turn it against them. Practice using Oppress, Giant Killer, Deathblow, or Knock Out to multiply your damage and secure as many victories as possible."
+      }
+    },
+    {
+      "name": "disable",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 1900,
+      "data": {
+        "action": "win",
+        "value": "Disable",
+        "abilities": [
+          "stun",
+          "piercing"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Supreme excellence consists of breaking your opponent's resistance with minimal cost. Practice using Piercing or Stun to penetrate their armor and disable their attacks while winning as many arena battles as possible."
+      }
+    },
+    {
+      "name": "impair",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 2800,
+      "data": {
+        "action": "win",
+        "value": "Impair",
+        "abilities": [
+          "demoralize",
+          "silence",
+          "headwinds",
+          "blind"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Some opponents will attempt to overwhelm you with damage. Use Demoralize, Silence, Headwinds, or Blind to impair their attacks and turn defeat into victory."
+      }
+    },
+    {
+      "name": "buffs",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 2800,
+      "data": {
+        "action": "win",
+        "value": "Buffs",
+        "abilities": [
+          "strengthen",
+          "swiftness",
+          "inspire",
+          "protect"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "\"Move like the wind. Attack like fire. Be impenetrable like a mountain. Endure like the Elder Tree.\" Basic tenets taught to aspiring battle mages, but still relevant at the highest leagues. Use Swiftness, Inspire, Protect, or Strengthen to hone your understanding of them."
+      }
+    },
+    {
+      "name": "ailments",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 2800,
+      "data": {
+        "action": "win",
+        "value": "Ailments",
+        "abilities": [
+          "poison",
+          "affliction",
+          "weaken"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "To overwhelm one's opponent with tremendous force is not the pinnacle of skill. To subdue them without effort is the pinnacle of skill. Practice using Poison, Affliction, or Weaken to make each win appear effortless."
+      }
+    },
+    {
+      "name": "reflect",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 3700,
+      "data": {
+        "action": "win",
+        "value": "Reflect",
+        "abilities": [
+          "backfire",
+          "return fire",
+          "magic reflect"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Sometimes the opportunity to defeat your opponent is provided by the opponent themself. Use Backfire, Return Fire, or Magic Reflect to turn their strength against them."
+      }
+    },
+    {
+      "name": "fatalities",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 3700,
+      "data": {
+        "action": "win",
+        "value": "Fatalities",
+        "abilities": [
+          "life leech",
+          "scavenger",
+          "redemption",
+          "bloodlust"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Practice leveraging spilled blood to strengthen your offense or whittle at your opponent's defense, building an insurmountable momentum. Use Bloodlust, Life Leech, Redemption, or Scavenger to capitalize on the carnage of battle."
+      }
+    },
+    {
+      "name": "nullify",
+      "active": true,
+      "objective_type": "ability",
+      "min_rating": 3700,
+      "data": {
+        "action": "win",
+        "value": "Nullify",
+        "abilities": [
+          "cripple",
+          "shatter",
+          "dispel"
+        ],
+        "bonus": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "description": "Don't labor against your opponent's strengths. If they are secure at all points, seek to nullify their advantage. Use Shatter, Cripple, or Dispel to level the battlefield and obliterate them."
+      }
+    },
+    {
+      "name": "no_neutral",
+      "active": false,
+      "objective_type": "no_neutral",
+      "min_rating": 100,
+      "data": {
+        "action": "win",
+        "value": "No Neutral",
+        "bonus": [
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02
+        ],
+        "description": "Win battles without the aid of Neutral monsters."
+      }
+    }
+  ],
+  "recaptcha_site_key": "6LewDugUAAAAAAI4FohgvADVQIUn7X070UJTzQDB",
+  "fractional_tokens": [
+    "SPS",
+    "DEC",
+    "VOUCHER",
+    "VOUCHER-G"
+  ],
+  "transferrable_tokens": [
+    "SPS",
+    "DEC",
+    "ALPHA",
+    "BETA",
+    "UNTAMED",
+    "ORB",
+    "DICE",
+    "RAFFLE",
+    "PLOT",
+    "TRACT",
+    "REGION",
+    "TOTEMC",
+    "TOTEMR",
+    "TOTEME",
+    "TOTEML",
+    "CHAOS",
+    "VOUCHER",
+    "LICENSE",
+    "RIFT",
+    "NIGHTMARE",
+    "VOUCHER-G",
+    "TC",
+    "REBELLION",
+    "TOTEMFC",
+    "TOTEMFE",
+    "TOTEMFL",
+    "TOTEMFR"
+  ],
+  "cl_end_of_sale": {
+    "start_date_time": "2023-02-26T09:10:00.000Z",
+    "is_enabled": 1
+  },
+  "promo_sale_page": {
+    "type": "card",
+    "show_date": "2023-04-22T00:00:00.000Z",
+    "hide_date": "2023-06-05T20:00:00.000Z",
+    "shop_config_name": "multi_element_promo_card"
+  },
+  "delegation_cooldown": 604800000,
+  "burn_event": {
+    "verification_data": {
+      "block_num": 76193370,
+      "block_id": "048a9e5a4f621c499fb6d1caf274c8661fdbf55b",
+      "prev_block_id": "048a9e59d06537ca0de7bbf2af97d97657354455",
+      "trx_id": "sm_burn_event_prizes"
+    },
+    "page_show_date": "2023-05-01T00:00:00.000Z",
+    "start_date": "2023-05-30T20:00:00.000Z",
+    "end_date": "2023-06-29T20:00:00.000Z",
+    "start_points_multiplier": 3,
+    "end_points_multiplier": 1,
+    "prize_distribution_complete": 1,
+    "page_hide_date": "2023-09-26T20:00:00.000Z"
+  },
+  "delegation_rental_min_qty": 100,
+  "delegation_rental_max_splits": 10,
+  "sps_mining_pool": {
+    "rewards_start": "2023-11-29 00:00:00",
+    "pool_start": "2022-10-18 00:00:00",
+    "initial_tokens_per_block": 7.134703196347032,
+    "estimated_current_tokens_per_block": 5.719396329473787,
+    "pool_stop": "2028-03-24 05:00:00",
+    "pool_decline": 0.99,
+    "latest_reward_block": 88654936,
+    "accumulated_rewards_per_share_of_pool": 0.12495874800810898
+  },
+  "proposal_accounts": [
+    "clayboyn",
+    "yabapmatt"
+  ],
+  "glint_start_season": 132,
+  "eos_glint_multiplier": 1,
+  "bitcoin_halving_event": {
+    "legendary_shop_id": "bitcoin_halving_legendary_card",
+    "start_points_multiplier": 3,
+    "end_date": "2024-05-01T16:00:00.000Z",
+    "end_points_multiplier": 1,
+    "verification_data": {
+      "block_num": 85019616,
+      "block_id": "05114be013ef373188d0aaa8f1023529c1b8704d",
+      "prev_block_id": "05114bdff67561c339a4e9be8aaab9f97953c981",
+      "trx_id": "sm_bitcoin_halving_event_prizes"
+    },
+    "page_hide_date": "2024-05-28T00:00:00.000Z",
+    "rare_shop_id": "bitcoin_halving_rare_card",
+    "prize_distribution_complete": 1,
+    "start_date": "2024-04-16T16:00:00.000Z",
+    "points_per_token": 1,
+    "page_show_date": "2024-04-01T00:00:00.000Z",
+    "points_per_entry": 10000
+  },
+  "hall_of_legends": {
+    "end_date": "2025-02-10T20:00:00.000Z",
+    "start_date": "2024-09-10T20:00:00.000Z",
+    "event1_end_date": "2024-09-24T20:00:00.000Z",
+    "verification_data": {},
+    "prize_distribution_complete": 0,
+    "rare_shop_id": "hall_of_legends_rare_card1",
+    "legendary_shop_id": "hall_of_legends_legendary_card1"
+  },
+  "wild_pass": {
+    "prices": [
+      {
+        "currency": "DEC",
+        "amount": 2000
+      },
+      {
+        "currency": "DEC-B",
+        "amount": 2000
+      },
+      {
+        "currency": "CREDITS",
+        "amount": 2000
+      }
+    ]
+  },
+  "unbind_config": {
+    "10": {
+      "start_date": "2024-08-15T15:30:00Z",
+      "cost_multiplier": 10,
+      "days_after_increase": 30,
+      "days_till_end": 180
+    }
+  },
+  "rpc_nodes": [
+    "https://anyx.io",
+    "https://hived.splinterlands.com",
+    "https://hived-2.splinterlands.com",
+    "https://api.openhive.network",
+    "https://api.hive.blog"
+  ],
+  "dec_price": 0.0007242,
+  "sps_price": 0.0067213,
+  "maintenance_mode": false,
+  "season": {
+    "id": 142,
+    "name": "Ranked Rewards Season 55",
+    "ends": "2024-09-15T14:00:00.000Z",
+    "reward_packs": [
+      "0",
+      "5",
+      "7",
+      "9",
+      "12",
+      "15",
+      "18",
+      "22",
+      "26",
+      "30",
+      "40",
+      "50",
+      "60",
+      "80",
+      "120",
+      "150"
+    ],
+    "reset_block_num": null
+  },
+  "next_season_end": "2024-09-30T14:00:00.000Z",
+  "previous_season": {
+    "id": 141,
+    "name": "Ranked Rewards Season 54",
+    "ends": "2024-08-31T14:00:00.000Z",
+    "reward_packs": [
+      "0",
+      "5",
+      "7",
+      "9",
+      "12",
+      "15",
+      "18",
+      "22",
+      "26",
+      "30",
+      "40",
+      "50",
+      "60",
+      "80",
+      "120",
+      "150"
+    ],
+    "reset_block_num": 88524384
+  },
+  "brawl_cycle": {
+    "id": 243,
+    "name": "Brawl Cycle 243",
+    "start": "2024-09-02T16:00:00.000Z",
+    "status": 1,
+    "reset_block_num": null,
+    "end": "2024-09-07T17:00:00.000Z"
+  },
+  "guild_store_items": [
+    {
+      "name": "Gladius Case",
+      "short_desc": "A pack that holds 5 Gladiator cards!",
+      "unlock_level": 2,
+      "cost": [
+        {
+          "symbol": "MERITS",
+          "amount": 2000,
+          "precision": 0
+        }
+      ],
+      "icon": "img_gladiator-pack_500.png",
+      "icon_sm": "img_gladiator-pack_125.png",
+      "color": "#FFB334",
+      "unit_of_purchase": "pack",
+      "symbol": "GLADIUS"
+    },
+    {
+      "name": "Spy Glass",
+      "plural": "Spy Glasses",
+      "short_desc": "Sneak a peek at enemy Fray assignments.",
+      "unlock_level": 4,
+      "cost": [
+        {
+          "symbol": "CROWN",
+          "amount": 2,
+          "precision": 0
+        }
+      ],
+      "icon": "img_spyglass_250.png",
+      "icon_sm": "img_spyglass_125.png",
+      "color": "#89E2E7",
+      "unit_of_purchase": "brawl",
+      "symbol": "SPY"
+    },
+    {
+      "name": "Blood Stone",
+      "short_desc": "Improve the drop rate of Gladiator <span style='font-weight: bold; font-style: italic;'>Legendary</span> cards!",
+      "unlock_level": 6,
+      "cost": [
+        {
+          "symbol": "MERITS",
+          "amount": 60,
+          "precision": 0
+        },
+        {
+          "symbol": "DEC",
+          "amount": 60,
+          "precision": 3
+        },
+        {
+          "symbol": "DEC-B",
+          "amount": 60,
+          "precision": 3
+        }
+      ],
+      "icon": "img_blood-stone_250.png",
+      "icon_sm": "img_blood-stone_125.png",
+      "color": "#F81C18",
+      "symbol": "BLDSTONE",
+      "apply_guild_lodge_discount": true
+    },
+    {
+      "name": "Power Stone",
+      "short_desc": "Improve the drop rate of Gladiator <span style='font-weight: bold; font-style: italic;'>Gold Foil</span> cards!",
+      "unlock_level": 8,
+      "cost": [
+        {
+          "symbol": "MERITS",
+          "amount": 80,
+          "precision": 0
+        },
+        {
+          "symbol": "DEC",
+          "amount": 80,
+          "precision": 3
+        },
+        {
+          "symbol": "DEC-B",
+          "amount": 80,
+          "precision": 3
+        }
+      ],
+      "icon": "img_power-stone_250.png",
+      "icon_sm": "img_power-stone_125.png",
+      "color": "#FECB29",
+      "symbol": "PWRSTONE",
+      "apply_guild_lodge_discount": true
+    }
+  ],
+  "last_block": 88655485,
+  "timestamp": 1725506928657,
+  "chain_props": {
+    "time": "2024-09-05T03:28:48",
+    "ref_block_num": 88655485,
+    "ref_block_id": null,
+    "ref_block_prefix": 4251249618
+  },
+  "circle_payments_enabled": 0,
+  "transak_payments_enabled": 1,
+  "zendesk_enabled": 1,
+  "dec_max_buy_amount": 20000000,
+  "sps_max_buy_amount": 500000,
+  "show_special_store": false,
+  "paypal_acct": "matt@steemmonsters.com",
+  "paypal_merchant_id": "V5UX5DWTG5PCC",
+  "paypal_client_id": "AY8dGLagvS7Svf4Nr3b4Uxu7RSzxJI-6XHe7tIUUrZ8R4pwsaRNdRARaT3xKaXw5wB2XIH214jfeGzTN",
+  "paypal_sandbox": false,
+  "ssc": {
+    "rpc_url": "https://api.steem-engine.net/rpc2",
+    "chain_id": "ssc-mainnet1",
+    "hive_rpc_url": "https://api.hive-engine.com/rpc",
+    "hive_chain_id": "ssc-mainnet-hive",
+    "alpha_token": "ALPHA",
+    "beta_token": "BETA",
+    "pack_holding_account": "sm-packs"
+  },
+  "card_holding_accounts": [
+    {
+      "blockchainName": "Ethereum",
+      "accountName": "sl-eth"
+    },
+    {
+      "blockchainName": "WAX",
+      "accountName": "sl-wax"
+    }
+  ],
+  "bridge": {
+    "voucher": {
+      "bridge_wallet": "validator-bridge"
+    },
+    "ethereum": {
+      "DEC": {
+        "enabled": true,
+        "game_wallet": "terablock-eth",
+        "min_amount": 30000,
+        "fee_pct": 0.005
+      },
+      "SPS": {
+        "enabled": true,
+        "game_wallet": "terablock-eth",
+        "min_amount": 1000,
+        "fee_pct": 0.005
+      }
+    },
+    "bsc": {
+      "DEC": {
+        "enabled": true,
+        "game_wallet": "terablock-bsc",
+        "min_amount": 500,
+        "fee_pct": 0.005
+      },
+      "SPS": {
+        "enabled": true,
+        "game_wallet": "terablock-bsc",
+        "min_amount": 25,
+        "fee_pct": 0.005
+      }
+    }
+  },
+  "ethereum": {
+    "withdrawal_fee": 1000,
+    "sps_withdrawal_fee": 25,
+    "contracts": {
+      "cards": {
+        "abi": {
+          "status": "1",
+          "message": "OK",
+          "result": "[{\"constant\":true,\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newBaseURI\",\"type\":\"string\"}],\"name\":\"setDynamicBaseURI\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_ethId\",\"type\":\"uint256\"},{\"name\":\"_newHolder\",\"type\":\"address\"}],\"name\":\"unlockCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"holder\",\"type\":\"address\"}],\"name\":\"tokensOfHolder\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenOfOwnerByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_splinterId\",\"type\":\"string\"},{\"name\":\"_holder\",\"type\":\"address\"}],\"name\":\"mintCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"cardIdForTokenId\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"cards\",\"outputs\":[{\"name\":\"splinterlandsId\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"},{\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_splinterId\",\"type\":\"string\"}],\"name\":\"tokenIdForCardId\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_ethId\",\"type\":\"uint256\"}],\"name\":\"burnCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_ethId\",\"type\":\"uint256\"},{\"name\":\"_steemAddr\",\"type\":\"string\"}],\"name\":\"lockCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"string\"}],\"name\":\"ethIds\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"proxyRegistryAddress\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"baseTokenURI\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newMinter\",\"type\":\"address\"}],\"name\":\"setMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_proxyAddr\",\"type\":\"address\"},{\"name\":\"_minter\",\"type\":\"address\"},{\"name\":\"_baseTokenURI\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"holder\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"cardId\",\"type\":\"string\"},{\"indexed\":false,\"name\":\"steemAddr\",\"type\":\"string\"},{\"indexed\":true,\"name\":\"ethId\",\"type\":\"uint256\"}],\"name\":\"LockCard\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"holder\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"cardId\",\"type\":\"string\"},{\"indexed\":true,\"name\":\"ethId\",\"type\":\"uint256\"}],\"name\":\"MintCard\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"}]"
+        },
+        "address": "0xe3870569f9e1836960bf30b5a45fc743cef0ab0e"
+      },
+      "crystals": {
+        "abi": {
+          "status": "1",
+          "message": "OK",
+          "result": "[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"sender\",\"type\":\"address\"},{\"name\":\"recipient\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"addedValue\",\"type\":\"uint256\"}],\"name\":\"increaseAllowance\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_holder\",\"type\":\"address\"},{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"unlock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"subtractedValue\",\"type\":\"uint256\"}],\"name\":\"decreaseAllowance\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"recipient\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_steemAddr\",\"type\":\"string\"},{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"lock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newMinter\",\"type\":\"address\"}],\"name\":\"setMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"minter\",\"type\":\"address\"}],\"name\":\"SetMinter\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"holder\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"steemAddr\",\"type\":\"string\"}],\"name\":\"LockCrystals\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"}]"
+        },
+        "address": "0x9393fdc77090f31c7db989390d43f454b1a6e7f3"
+      },
+      "payments": {
+        "abi": {
+          "status": "1",
+          "message": "OK",
+          "result": "[{\"constant\":false,\"inputs\":[{\"name\":\"_newWithdrawer\",\"type\":\"address\"}],\"name\":\"setWithdrawer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"tokens\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\"},{\"name\":\"_orderId\",\"type\":\"string\"}],\"name\":\"payToken\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"}],\"name\":\"delist\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"}],\"name\":\"withdrawToken\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numTokens\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newAcceptor\",\"type\":\"address\"}],\"name\":\"setAcceptor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"}],\"name\":\"whitelist\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"withdrawEth\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_orderId\",\"type\":\"string\"}],\"name\":\"payEth\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_acceptor\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"orderId\",\"type\":\"string\"}],\"name\":\"EthPayment\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"token\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"orderId\",\"type\":\"string\"}],\"name\":\"TokenPayment\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}]"
+        },
+        "address": "0x19929Aba99e4c8964bBA92915EfF5D888475fF9a"
+      }
+    }
+  },
+  "wax": {
+    "login_enabled": true,
+    "client_id": "242f65467d00",
+    "auth_url": "https://api-idm.wax.io/v1/authorize",
+    "external": {
+      "token": {
+        "account": "splintrlands"
+      },
+      "atomicassets": {
+        "account": "atomicassets"
+      }
+    }
+  },
+  "api_ops": [
+    "find_match",
+    "cancel_match",
+    "start_match",
+    "submit_team",
+    "team_reveal",
+    "surrender",
+    "accept_challenge",
+    "decline_challenge"
+  ],
+  "card_image_url": "https://d36mxiodymuqjm.cloudfront.net/",
+  "template_caching": false
+}

@@ -1,6 +1,7 @@
 using System;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Linq;
 using CardBattle.Utils.JsonModels;
@@ -18,7 +19,19 @@ namespace CardBattle.Utils
         {
             _context = context;
         }
-        public async Task SeedDatabase(string jsonFilePath)
+        public async Task SeedDatabase(string jsonFilePath, string fileType)
+        {
+            if (fileType == "cards")
+            {
+                await SeedCards(jsonFilePath);
+            }
+            else if (fileType == "battlesettings")
+            {
+                await SeedRulesets(jsonFilePath);
+            }
+        }
+
+        public async Task SeedCards(string jsonFilePath)
         {
             // Read and deserialize the JSON data
             var jsonData = File.ReadAllText(jsonFilePath);
@@ -53,7 +66,7 @@ namespace CardBattle.Utils
                             Rarity = (Rarity)cardJson.Rarity,
                             SummonerAbilities = new List<CardBattle.DataModels.Ability>()  // Initialize SummonerAbilities
                         };
-
+        
                         // Handle Monster cards
                         if (card.Type == CardType.Monster)
                         {
@@ -61,7 +74,7 @@ namespace CardBattle.Utils
                             if (cardJson.Stats is CardStatsJsonModelMonster monsterStats)
                             {
                                 card.CardStats = new List<CardStats>();
-
+        
                                 for (int i = 0; i < monsterStats.Mana.Count; i++)
                                 {
                                     var cardStats = new CardStats
@@ -76,7 +89,7 @@ namespace CardBattle.Utils
                                         Speed = monsterStats.Speed[i],
                                         CardStatsAbilities = new List<CardStatsAbility>()
                                     };
-
+        
                                     foreach (var abilityName in monsterStats.Abilities[i])
                                     {
                                         var ability = _context.Abilities.FirstOrDefault(a => a.Name == abilityName);
@@ -86,14 +99,14 @@ namespace CardBattle.Utils
                                             await _context.Abilities.AddAsync(ability);
                                             await _context.SaveChangesAsync();
                                         }
-
+        
                                         cardStats.CardStatsAbilities.Add(new CardStatsAbility
                                         {
                                             Ability = ability,
                                             CardStats = cardStats
                                         });
                                     }
-
+        
                                     card.CardStats.Add(cardStats);
                                 }
                             }
@@ -113,7 +126,7 @@ namespace CardBattle.Utils
                                 Speed = summonerAbilitiesStats.Speed,
                                 ActiveSummonerAbilities = new List<CardBattle.DataModels.Ability>()
                             };
-
+        
                             foreach (var abilityName in summonerAbilitiesStats.Abilities)
                             {
                                 var ability = _context.Abilities.FirstOrDefault(a => a.Name == abilityName);
@@ -122,9 +135,9 @@ namespace CardBattle.Utils
                                     ability = new CardBattle.DataModels.Ability { Name = abilityName };
                                     await _context.Abilities.AddAsync(ability);
                                     await _context.SaveChangesAsync();
-
+        
                                 }
-
+        
                                 if (new[] { "Resurrect", "Cleanse", "Triage", "Repair" }.Contains(abilityName))
                                 {
                                     summonerStat.ActiveSummonerAbilities.Add(ability);
@@ -134,7 +147,7 @@ namespace CardBattle.Utils
                                     card.SummonerAbilities.Add(ability);
                                 }
                             }
-
+        
                             card.SummonerStats = new List<CardBattle.DataModels.SummonerStat> { summonerStat };
                         }
                         // Handle Summoner cards with ptrOptions
@@ -162,7 +175,7 @@ namespace CardBattle.Utils
                                         await _context.Abilities.AddAsync(ability);
                                         await _context.SaveChangesAsync();
                                     }
-
+        
                                     var ptrStatBuff = new CardBattle.DataModels.StatBuff
                                     {
                                         Mana = ptrOption.StatBuff?[0] ?? 0,
@@ -174,22 +187,22 @@ namespace CardBattle.Utils
                                         Speed = ptrOption.StatBuff?[6] ?? 0,
                                         Max = ptrOption.Max
                                     };
-
+        
                                     summonerStat.StatBuffs.Add(ptrStatBuff);
                                     card.SummonerAbilities.Add(ability);
                                 }
                             }   
                             card.SummonerStats = new List<CardBattle.DataModels.SummonerStat> { summonerStat };
                         }
-
+        
                         _context.Cards.Add(card);
                     }
                     // Save all changes to the database
                     await _context.SaveChangesAsync();
-
+        
                     // Disable IDENTITY_INSERT after inserting records
                     await _context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT [dbo].[Cards] OFF");
-
+        
                     // Commit the transaction
                     await transaction.CommitAsync();    
                 }
@@ -199,6 +212,37 @@ namespace CardBattle.Utils
                     await transaction.RollbackAsync();
                     Console.WriteLine($"Error: {ex.Message}");
                 }
+            }
+        }
+        
+        public async Task SeedRulesets(string jsonFilePath)
+        {
+            // Read and deserialize the JSON data
+            var jsonData = File.ReadAllText(jsonFilePath);
+            var battlesettings = JObject.Parse(jsonData);
+        
+            // Extract the "battles" portion
+            JObject battles = (JObject)battlesettings["battles"];
+        
+            // Extract rulesets
+            JArray rulesets = (JArray)battles["rulesets"];
+        
+            // Create a list of Ruleset objects
+            List<Ruleset> rulesetList = new List<Ruleset>();
+            foreach (var ruleset in rulesets)
+            {
+                rulesetList.Add(new Ruleset
+                {
+                    Name = (string)ruleset["name"],
+                    Description = (string)ruleset["description"]
+                });
+            }
+        
+            // Seed the Rulesets table if it is empty
+            if (!_context.Rulesets.Any())
+            {
+                _context.Rulesets.AddRange(rulesetList);
+                await _context.SaveChangesAsync();
             }
         }
 

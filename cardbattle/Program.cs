@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CardBattle.DataModels;
 using System.Threading.Tasks;
+using CardBattle.Utils; 
 namespace CardBattle
 {
     class Program  // Define the Program class
@@ -15,12 +16,13 @@ namespace CardBattle
             {
                 var services = scope.ServiceProvider;
                 var context = services.GetRequiredService<BattleSimulatorContext>();
-
-                // Path to your JSON file
-                string jsonFilePath = "c:\\Users\\david\\splsim\\cardbattle\\cards.json";
-
+                
+                // Paths to your JSON files
+                string cardsJsonFilePath = "c:\\Users\\david\\splsim\\cardbattle\\cards.json";
+                string battlesettingsJsonFilePath = "c:\\Users\\david\\splsim\\cardbattle\\battlesettings.json";
+                            
                 // Initialize the database
-                await context.InitializeDatabase(jsonFilePath);
+                await context.InitializeDatabase(cardsJsonFilePath, battlesettingsJsonFilePath);
             }
 
             host.Run();
