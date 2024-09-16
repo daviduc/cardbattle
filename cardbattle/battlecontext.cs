@@ -10,5 +10,6 @@ namespace CardBattle
         public List<Ruleset> Rulesets { get; set; } = new List<Ruleset>();
         public List<string> AllowableColors { get; set; } = new List<string>();
         // Additional properties like Teams, Cards, etc.
+        public List<Team> Teams { get; set; } = new List<Team>();
     }
 }

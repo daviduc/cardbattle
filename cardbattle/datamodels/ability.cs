@@ -1,4 +1,7 @@
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
 namespace CardBattle.DataModels
 {
     public class Ability
@@ -9,8 +12,14 @@ namespace CardBattle.DataModels
 
         // Navigation property for the many-to-many relationship with CardStats
         public ICollection<CardStatsAbility> CardStatsAbilities { get; set; }
-        public ICollection<Card> SummonerCards { get; set; } // For Summoner abilities
-        public ICollection<SummonerStatAbility> SummonerStatAbilities {get;set;}
-        public ICollection<PtrOptionAbility> PtrOptionAbilities {get;set;}
+        public ICollection<PtrOptionsAbility> PtrOptionsAbilities {get;set;}
+    }
+    public class AbilityConfiguration : IEntityTypeConfiguration<Ability>
+    {
+        public void Configure(EntityTypeBuilder<Ability> builder)
+        {
+            builder.HasIndex(a => a.Name)
+                .IsUnique();
+        }
     }
 }

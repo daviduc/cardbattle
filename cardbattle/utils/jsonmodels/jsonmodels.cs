@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 namespace CardBattle.Utils.JsonModels
 {
+
     public class CardJsonConverter : JsonConverter
     {
         public override bool CanConvert(Type objectType)
@@ -26,13 +27,26 @@ namespace CardBattle.Utils.JsonModels
                 // Determine whether this Summoner has "abilities" or "ptrOptions"
                 if (jsonObject["stats"]["abilities"] != null)
                 {
-                    // Handle Summoner with abilities
-                    card.Stats = jsonObject["stats"].ToObject<CardStatsJsonModelSummonerAbilities>();
+                    if(jsonObject["stats"]["ptrOptions"]== null)
+                    {
+                        // Handle Summoner with abilities
+                        card.Stats = jsonObject["stats"].ToObject<CardStatsJsonModelSummonerAbilities>();
+                    }
+                    else
+                    {
+                        // Handle Summoner with ptrOptions
+                        card.Stats = jsonObject["stats"].ToObject<CardStatsJsonModelSummonerPtrOptions>();
+                    }
                 }
                 else if (jsonObject["stats"]["ptrOptions"] != null)
                 {
                     // Handle Summoner with ptrOptions
                     card.Stats = jsonObject["stats"].ToObject<CardStatsJsonModelSummonerPtrOptions>();
+                }
+                else
+                {
+                    // Handle Summoner without abilities or ptrOptions
+                    card.Stats = jsonObject["stats"].ToObject<CardStatsJsonModelSummoner>();
                 }
             }
             else if (cardType == "Monster")
@@ -48,37 +62,6 @@ namespace CardBattle.Utils.JsonModels
             serializer.Serialize(writer, value);
         }
     }
-    // public class IntListConverter : JsonConverter<List<int>>
-    // {
-    //     public override List<int> ReadJson(JsonReader reader, Type objectType, List<int> existingValue, bool hasExistingValue, JsonSerializer serializer)
-    //     {
-    //         var token = JToken.Load(reader);
-
-    //         if (token.Type == JTokenType.Array)
-    //         {
-    //             var list = new List<int>();
-    //             foreach (var item in token)
-    //             {
-    //                 list.Add(item.ToObject<int>());
-    //             }
-    //             return list;
-    //         }
-    //         else if (token.Type == JTokenType.Integer)
-    //         {
-    //             // If the token is a single integer, convert it to a list containing that integer
-    //             return new List<int> { token.ToObject<int>() };
-    //         }
-    //         else
-    //         {
-    //             throw new JsonSerializationException($"Unexpected token type: {token.Type}");
-    //         }
-    //     }
-
-    //     public override void WriteJson(JsonWriter writer, List<int> value, JsonSerializer serializer)
-    //     {
-    //         serializer.Serialize(writer, value);
-    //     }
-    // }
     [JsonConverter(typeof(CardJsonConverter))]
     public class CardJsonModel
     {
@@ -90,7 +73,7 @@ namespace CardBattle.Utils.JsonModels
         public string Type { get; set; }
         public int Rarity { get; set; }
         // Use different models for different types
-        public object Stats { get; set; }  // Can be either CardStatsJsonModelSummonerAbilities, CardStatsJsonModelSummonerPtrOptions, or CardStatsJsonModelMonster
+        public object Stats { get; set; }  
 
         // Other properties
         public bool IsStarter { get; set; }
@@ -111,57 +94,6 @@ namespace CardBattle.Utils.JsonModels
         public string NumBurned { get; set; }
         public string TotalBurnedXp { get; set; }
     }
-    // public class CardStatsJsonModel
-    // {
-    //      // Use the custom converter for Monster-specific stats
-    //     //[JsonConverter(typeof(IntListConverter))]
-    //     public List<int> Mana { get; set; }
-        
-    //     //[JsonConverter(typeof(IntListConverter))]
-    //     public List<int> Attack { get; set; }
-        
-    //     //[JsonConverter(typeof(IntListConverter))]
-    //     public List<int> Ranged { get; set; }
-        
-    //     //[JsonConverter(typeof(IntListConverter))]
-    //     public List<int> Magic { get; set; }
-        
-    //     //[JsonConverter(typeof(IntListConverter))]
-    //     public List<int> Armor { get; set; }
-        
-    //     //[JsonConverter(typeof(IntListConverter))]
-    //     public List<int> Health { get; set; }
-        
-    //     //[JsonConverter(typeof(IntListConverter))]
-    //     public List<int> Speed { get; set; }
-    //     public List<List<string>> Abilities { get; set; }  // This remains for Monster-specific abilities
-    //     // These properties are used for Summoner cards, where each stat applies to the whole team
-    //     public int SummonerMana { get; set; }   // Mana cost of using the Summoner
-    //     public int SummonerAttack { get; set; } 
-    //     public int SummonerRanged { get; set; }
-    //     public int SummonerMagic { get; set; }
-    //     public int SummonerArmor { get; set; }
-    //     public int SummonerHealth { get; set; }
-    //     public int SummonerSpeed { get; set; }
-    //     public List<string> SummonerAbilities { get; set; }  // Abilities that the Summoner grants
-    // }
-    // public class PtrOptionsJsonModel
-    // {
-    //     public int Max { get; set; }
-    //     public StatBuffJsonModel StatBuff { get; set; }
-    //     public List<string> Abilities { get; set; }
-    // }
-
-    // public class StatBuffJsonModel
-    // {
-    //     public int Mana { get; set; }
-    //     public int Attack { get; set; }
-    //     public int Ranged { get; set; }
-    //     public int Magic { get; set; }
-    //     public int Armor { get; set; }
-    //     public int Health { get; set; }
-    //     public int Speed { get; set; }
-    // }
     public class CardStatsJsonModelMonster
     {
         public List<int> Mana { get; set; }      // List of mana values for each level
@@ -175,6 +107,16 @@ namespace CardBattle.Utils.JsonModels
         // Abilities for each level. Each index of the list corresponds to the abilities available at that level.
         public List<List<string>> Abilities { get; set; }
     }
+    public class CardStatsJsonModelSummoner
+    {
+        public int Mana { get; set; }
+        public int Attack { get; set; }
+        public int Ranged { get; set; }
+        public int Magic { get; set; }
+        public int Armor { get; set; }
+        public int Health { get; set; }
+        public int Speed { get; set; }
+    }
     public class CardStatsJsonModelSummonerAbilities
     {
         public int Mana { get; set; }
@@ -184,7 +126,7 @@ namespace CardBattle.Utils.JsonModels
         public int Armor { get; set; }
         public int Health { get; set; }
         public int Speed { get; set; }
-        public List<string> Abilities { get; set; }  // List of abilities for Summoners
+        public List<string>? Abilities { get; set; }  // List of abilities for Summoners
     }
     public class CardStatsJsonModelSummonerPtrOptions
     {
@@ -195,6 +137,7 @@ namespace CardBattle.Utils.JsonModels
         public int Armor { get; set; }
         public int Health { get; set; }
         public int Speed { get; set; }
+        public List<string>? Abilities { get; set; }
         public List<PtrOption> PtrOptions { get; set; }  // List of ptrOptions for Summoners
     }
 
@@ -209,6 +152,7 @@ namespace CardBattle.Utils.JsonModels
         public string Target { get; set; }
         public string TargetType { get; set; }
         public int Max { get; set; }
+        public List<string> Abilities { get; set; }
     }
     public class StatBuff
     {
@@ -228,17 +172,17 @@ namespace CardBattle.Utils.JsonModels
         public string Description { get; set; } // Description of the ability's effects
     }
 
-    public class SummonerStat
-    {
-        public int Mana { get; set; }
-        public int Attack { get; set; }
-        public int Ranged { get; set; }
-        public int Magic { get; set; }
-        public int Armor { get; set; }
-        public int Health { get; set; }
-        public int Speed { get; set; }
-        public List<Ability> ActiveSummonerAbilities { get; set; }
-        public List<StatBuff> StatBuffs { get; set; }  // Add StatBuffs collection
-    }
+    // public class SummonerStat
+    // {
+    //     public int Mana { get; set; }
+    //     public int Attack { get; set; }
+    //     public int Ranged { get; set; }
+    //     public int Magic { get; set; }
+    //     public int Armor { get; set; }
+    //     public int Health { get; set; }
+    //     public int Speed { get; set; }
+    //     public List<Ability> ActiveSummonerAbilities { get; set; }
+    //     public List<StatBuff> StatBuffs { get; set; }  // Add StatBuffs collection
+    // }
 
 }

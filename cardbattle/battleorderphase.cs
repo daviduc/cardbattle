@@ -1,8 +1,8 @@
 using System;
-using System.Linq;
+
 namespace CardBattle
 {
-    public class ApplyBattleRulesPhase : IPhase
+    public class DetermineBattleOrderPhase : IPhase
     {
         public bool Validate(BattleContext context)
         {
@@ -10,21 +10,18 @@ namespace CardBattle
             return true;
         }
     
-        public int Order => 20;
+        public int Order => 40;
 
         public bool CanEnter(BattleContext context)
         {
-            return context.Rulesets.Any();
+            return true;
         }
 
         public void Execute(BattleContext context)
         {
-            Console.WriteLine("Applying battle rules...");
-            foreach (var ruleset in context.Rulesets)
-            {
-                // Apply each ruleset's effect to the battle
-                Console.WriteLine($"Applying ruleset: {ruleset.Name}");
-            }
+            Console.WriteLine("Determining battle order...");
+            // Sort cards based on speed or other criteria
+            
         }
 
         public bool CanExit(BattleContext context)
@@ -32,5 +29,4 @@ namespace CardBattle
             return true;
         }
     }
-
 }

@@ -11,6 +11,7 @@ namespace CardBattle
         bool CanEnter(BattleContext context); // Checks if the phase can start
         void Execute(BattleContext context);  // Executes phase logic
         bool CanExit(BattleContext context);  // Checks if the phase can exit
+        bool Validate(BattleContext context); // Validates the phase
     }
 
     public class PhaseManager

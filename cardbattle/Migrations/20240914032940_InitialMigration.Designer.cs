@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace cardbattle.datamodels.migrations
+namespace cardbattle.Migrations
 {
     [DbContext(typeof(BattleSimulatorContext))]
-    [Migration("20240904061936_AddStatBuff")]
-    partial class AddStatBuff
+    [Migration("20240914032940_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,21 +52,57 @@ namespace cardbattle.datamodels.migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("PtrOptionsId")
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int?>("SummonerStatId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PtrOptionsId");
+                    b.HasIndex("Name")
+                        .IsUnique()
+                        .HasFilter("[Name] IS NOT NULL");
 
                     b.HasIndex("SummonerStatId");
 
                     b.ToTable("Abilities");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.Battle", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AllowableColors")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ManaCap")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Battles");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.BattleRuleset", b =>
+                {
+                    b.Property<int>("BattleId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RulesetId")
+                        .HasColumnType("int");
+
+                    b.HasKey("BattleId", "RulesetId");
+
+                    b.HasIndex("RulesetId");
+
+                    b.ToTable("BattleRulesets");
                 });
 
             modelBuilder.Entity("CardBattle.DataModels.Card", b =>
@@ -151,6 +187,21 @@ namespace cardbattle.datamodels.migrations
                     b.ToTable("CardStatsAbilities");
                 });
 
+            modelBuilder.Entity("CardBattle.DataModels.PtrOptionAbility", b =>
+                {
+                    b.Property<int>("PtrOptionId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AbilityId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PtrOptionId", "AbilityId");
+
+                    b.HasIndex("AbilityId");
+
+                    b.ToTable("PtrOptionAbility");
+                });
+
             modelBuilder.Entity("CardBattle.DataModels.PtrOptions", b =>
                 {
                     b.Property<int>("Id")
@@ -171,6 +222,25 @@ namespace cardbattle.datamodels.migrations
                         .IsUnique();
 
                     b.ToTable("PtrOptions");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.Ruleset", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Rulesets");
                 });
 
             modelBuilder.Entity("CardBattle.DataModels.StatBuff", b =>
@@ -256,7 +326,58 @@ namespace cardbattle.datamodels.migrations
 
                     b.HasIndex("CardId");
 
-                    b.ToTable("SummonerStat");
+                    b.ToTable("SummonerStats");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.SummonerStatAbility", b =>
+                {
+                    b.Property<int>("SummonerStatId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AbilityId")
+                        .HasColumnType("int");
+
+                    b.HasKey("SummonerStatId", "AbilityId");
+
+                    b.HasIndex("AbilityId");
+
+                    b.ToTable("SummonerStatAbilities");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.Team", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("BattleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BattleId");
+
+                    b.ToTable("Teams");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.TeamCard", b =>
+                {
+                    b.Property<int>("TeamId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CardId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TeamId", "CardId");
+
+                    b.HasIndex("CardId");
+
+                    b.ToTable("TeamCards");
                 });
 
             modelBuilder.Entity("AbilityCard", b =>
@@ -276,13 +397,28 @@ namespace cardbattle.datamodels.migrations
 
             modelBuilder.Entity("CardBattle.DataModels.Ability", b =>
                 {
-                    b.HasOne("CardBattle.DataModels.PtrOptions", null)
-                        .WithMany("PtrAbilities")
-                        .HasForeignKey("PtrOptionsId");
-
                     b.HasOne("CardBattle.DataModels.SummonerStat", null)
                         .WithMany("ActiveSummonerAbilities")
                         .HasForeignKey("SummonerStatId");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.BattleRuleset", b =>
+                {
+                    b.HasOne("CardBattle.DataModels.Battle", "Battle")
+                        .WithMany("BattleRulesets")
+                        .HasForeignKey("BattleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CardBattle.DataModels.Ruleset", "Ruleset")
+                        .WithMany("BattleRulesets")
+                        .HasForeignKey("RulesetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Battle");
+
+                    b.Navigation("Ruleset");
                 });
 
             modelBuilder.Entity("CardBattle.DataModels.CardStats", b =>
@@ -313,6 +449,25 @@ namespace cardbattle.datamodels.migrations
                     b.Navigation("Ability");
 
                     b.Navigation("CardStats");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.PtrOptionAbility", b =>
+                {
+                    b.HasOne("CardBattle.DataModels.Ability", "Ability")
+                        .WithMany("PtrOptionAbilities")
+                        .HasForeignKey("AbilityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CardBattle.DataModels.PtrOptions", "PtrOptions")
+                        .WithMany("PtrOptionAbilities")
+                        .HasForeignKey("PtrOptionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ability");
+
+                    b.Navigation("PtrOptions");
                 });
 
             modelBuilder.Entity("CardBattle.DataModels.PtrOptions", b =>
@@ -352,9 +507,66 @@ namespace cardbattle.datamodels.migrations
                     b.Navigation("Card");
                 });
 
+            modelBuilder.Entity("CardBattle.DataModels.SummonerStatAbility", b =>
+                {
+                    b.HasOne("CardBattle.DataModels.Ability", "Ability")
+                        .WithMany("SummonerStatAbilities")
+                        .HasForeignKey("AbilityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CardBattle.DataModels.SummonerStat", "SummonerStat")
+                        .WithMany("SummonerStatAbilities")
+                        .HasForeignKey("SummonerStatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ability");
+
+                    b.Navigation("SummonerStat");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.Team", b =>
+                {
+                    b.HasOne("CardBattle.DataModels.Battle", null)
+                        .WithMany("Teams")
+                        .HasForeignKey("BattleId")
+                        .OnDelete(DeleteBehavior.SetNull);
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.TeamCard", b =>
+                {
+                    b.HasOne("CardBattle.DataModels.Card", "Card")
+                        .WithMany("TeamCards")
+                        .HasForeignKey("CardId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CardBattle.DataModels.Team", "Team")
+                        .WithMany("TeamCards")
+                        .HasForeignKey("TeamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Card");
+
+                    b.Navigation("Team");
+                });
+
             modelBuilder.Entity("CardBattle.DataModels.Ability", b =>
                 {
                     b.Navigation("CardStatsAbilities");
+
+                    b.Navigation("PtrOptionAbilities");
+
+                    b.Navigation("SummonerStatAbilities");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.Battle", b =>
+                {
+                    b.Navigation("BattleRulesets");
+
+                    b.Navigation("Teams");
                 });
 
             modelBuilder.Entity("CardBattle.DataModels.Card", b =>
@@ -364,6 +576,8 @@ namespace cardbattle.datamodels.migrations
                     b.Navigation("PtrOptions");
 
                     b.Navigation("SummonerStats");
+
+                    b.Navigation("TeamCards");
                 });
 
             modelBuilder.Entity("CardBattle.DataModels.CardStats", b =>
@@ -373,9 +587,14 @@ namespace cardbattle.datamodels.migrations
 
             modelBuilder.Entity("CardBattle.DataModels.PtrOptions", b =>
                 {
-                    b.Navigation("PtrAbilities");
+                    b.Navigation("PtrOptionAbilities");
 
                     b.Navigation("StatBuffs");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.Ruleset", b =>
+                {
+                    b.Navigation("BattleRulesets");
                 });
 
             modelBuilder.Entity("CardBattle.DataModels.SummonerStat", b =>
@@ -383,6 +602,13 @@ namespace cardbattle.datamodels.migrations
                     b.Navigation("ActiveSummonerAbilities");
 
                     b.Navigation("StatBuffs");
+
+                    b.Navigation("SummonerStatAbilities");
+                });
+
+            modelBuilder.Entity("CardBattle.DataModels.Team", b =>
+                {
+                    b.Navigation("TeamCards");
                 });
 #pragma warning restore 612, 618
         }

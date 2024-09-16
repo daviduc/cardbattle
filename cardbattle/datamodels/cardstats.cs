@@ -1,5 +1,6 @@
 using System.Collections.Generic;
-
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace CardBattle.DataModels
 {
     public class CardStats
@@ -21,5 +22,17 @@ namespace CardBattle.DataModels
 
         // Navigation property for related abilities (many-to-many relationship with ability)
         public ICollection<CardStatsAbility> CardStatsAbilities { get; set; }
+    }
+    public class CardStatsConfiguration : IEntityTypeConfiguration<CardStats>
+    {
+        public void Configure(EntityTypeBuilder<CardStats> builder)
+        {
+            // Define the many-to-many relationship with Ability through CardStatsAbility
+            builder.HasMany(cs => cs.CardStatsAbilities)
+                   .WithOne(csa => csa.CardStats)
+                   .HasForeignKey(csa => csa.CardStatsId);
+
+            // Additional configurations...
+        }
     }
 }

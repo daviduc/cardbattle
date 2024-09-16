@@ -1,8 +1,8 @@
 using System;
-using System.Linq;
+
 namespace CardBattle
 {
-    public class ApplyBattleRulesPhase : IPhase
+    public class EndOfRoundPhase : IPhase
     {
         public bool Validate(BattleContext context)
         {
@@ -10,21 +10,17 @@ namespace CardBattle
             return true;
         }
     
-        public int Order => 20;
+        public int Order => 60;
 
         public bool CanEnter(BattleContext context)
         {
-            return context.Rulesets.Any();
+            return true; // Always runs at the end of a round
         }
 
         public void Execute(BattleContext context)
         {
-            Console.WriteLine("Applying battle rules...");
-            foreach (var ruleset in context.Rulesets)
-            {
-                // Apply each ruleset's effect to the battle
-                Console.WriteLine($"Applying ruleset: {ruleset.Name}");
-            }
+            Console.WriteLine("Applying end-of-round effects...");
+            // Apply end-of-round effects like poison, healing, etc.
         }
 
         public bool CanExit(BattleContext context)
